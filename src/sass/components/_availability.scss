@@ -1,0 +1,12 @@
+.availability {
+  text-transform: uppercase;
+  color: #1fc119;
+
+  @include screen(sm) {
+    font: 500 12px/15px Roboto, sans-serif;
+  }
+
+  @include screen(md) {
+    font: 500 13px/15px Roboto, sans-serif;
+  }
+}

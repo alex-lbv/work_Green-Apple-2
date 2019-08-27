@@ -1,0 +1,49 @@
+.tab-tradein {
+  .title {
+    max-width: 515px;
+
+    @include screen(smlim) {
+      margin-bottom: 15px;
+    }
+  }
+
+  .intro {
+    @include screen(smlim) {
+      padding: 0 15px;
+    }
+
+    @include screen(lg) {
+      padding: 0 40px;
+    }
+  }
+
+  .tab-col--left {
+    background: #f2f3f5;
+    border-radius: 20px;
+
+    @include screen(smlim) {
+      padding: 20px 0 0;
+      margin-bottom: 20px;
+    }
+
+    @include screen(lg) {
+      padding: 30px 0 15px;
+    }
+  }
+
+  .accordion {
+    @include screen(lg) {
+      margin: 0 15px;
+    }
+  }
+
+  hr {
+    @include screen(smlim) {
+      display: none;
+    }
+
+    @include screen(lg) {
+      margin: 0 15px 30px;
+    }
+  }
+}

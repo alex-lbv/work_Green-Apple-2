@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/main.min.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    //= components/header.html
+    <div class="content">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link">Главная</a>
+          </li>
+
+          <li class="breadcrumbs__item">
+            <span>Новости</span>
+          </li>
+        </ul>
+        <div class="contacts">
+          <h1 class="title">Контакты</h1>
+          <div class="contacts__row">
+            <div class="contacts__col">
+              <p class="label-title">Телефон</p>
+              <p class="contacts__phone">
+                <a class="title title--size-md contacts__link" href="tel:+74993488737">+7 499 348-87-37</a>
+              </p>
+              <div class="contacts__small-text">
+                <p>Бесплатно по всей територрии РФ</p>
+                <p>С 10:00 до 21:00, без выходных</p>
+              </div>
+              <button type="button" class="btn contacts__btn">Задать вопрос</button>
+            </div>
+            <div class="contacts__col">
+              <p class="label-title">Email</p>
+              <p class="contacts__email">
+                <a class="title title--size-sm contacts__link" href="mailto:info@green-apple.ru"
+                  class="title--size-sm">info@green-apple.ru</a>
+              </p>
+            </div>
+            <div class="contacts__col">
+              <p class="label-title">Адрес</p>
+              <div class="contacts__address">
+                <div class="contacts__address-col">
+                  <svg class="contacts__address-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/symbol/sprite.svg#metro">
+                  </svg>
+                  <p>Савеловская, <span>Сущевский Вал 5 с 6</span></p>
+                </div>
+                <div class="contacts__address-col"><svg class="contacts__address-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/symbol/sprite.svg#metro">
+                  </svg>
+                  <p>Кузьминки, <span>ул. Зеленодельская 121/35</span></p>
+                </div>
+                <div class="contacts__address-col"><svg class="contacts__address-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/symbol/sprite.svg#metro">
+                  </svg>
+                  <p>Озерная, <span>ул. Озерная 38</span></p>
+                </div>
+                <div class="contacts__address-col"><svg class="contacts__address-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/symbol/sprite.svg#metro">
+                  </svg>
+                  <p>Ломоновский проспект, <span>ул. Мосфильмовская 31</span></p>
+                </div>
+                <div class="contacts__address-col"><svg class="contacts__address-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/symbol/sprite.svg#metro">
+                  </svg>
+                  <p>Сокольники, <span>Русаковская 26Бс1</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="contacts__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d53787.65773638526!2d30.337858222679674!3d59.93387135736224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1562672617310!5m2!1sru!2sru"
+          width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div class="container">
+        //= components/subscribe.html
+      </div>
+    </div>
+    //= components/footer.html
+  </div>
+  <div class="bg"></div>
+  <script src="js/scripts.min.js"></script>
+</body>
+
+</html>

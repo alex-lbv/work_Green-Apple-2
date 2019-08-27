@@ -1,0 +1,248 @@
+.tabs {
+  @include screen("lg") {
+    margin-bottom: 30px;
+  }
+
+  &__wrapper {
+    border-radius: 30px 30px 0px 0px;
+
+    @include screen(smlim) {
+      display: flex;
+      flex-direction: column;
+      padding-top: 5px;
+    }
+
+    @include screen(lg) {
+      padding: 5px 5px 0;
+    }
+  }
+
+  &__btn {
+    position: relative;
+    width: auto;
+    border-bottom: none;
+    background: #e9ebef;
+    border-radius: 25px 25px 0px 0px;
+    font: 500 16px/22px Closer, sans-serif;
+    color: $txt-dark;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: box-shadow 0.4s, background-color 0.4s, color 0.4s,
+      border-radius 0.4s, opacity 0.5s;
+
+    @include screen(smlim) {
+      padding: 12px 21px 15px;
+    }
+
+    @include screen (lg) {
+      padding: 12px 21px 19px;
+    }
+
+    &--bright {
+      @include screen(lg) {
+        padding-bottom: 15px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: "шаг";
+      color: #2b2d30;
+      opacity: 0.3;
+
+      @include screen(sm) {
+        bottom: -22px;
+        left: 13px;
+        font: 600 13px / 19px AvenirNext, sans-serif;
+      }
+
+      @include screen(md) {
+        bottom: -29px;
+        left: 21px;
+        font: 600 14px / 19px AvenirNext, sans-serif;
+      }
+    }
+
+    &:not(:last-of-type)::before {
+      position: absolute;
+      content: "";
+      right: 0;
+      top: 9px;
+      height: 31px;
+      border-right: 2px solid #dfdfdf;
+      border-radius: 1px;
+      z-index: 0;
+    }
+
+    &:nth-last-of-type(2)::before {
+      display: none;
+    }
+
+    &--active {
+      background: #ffffff;
+      box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1), 0 0 1px 3px #e9ebef;
+      color: #fe4e1d;
+      z-index: 2;
+
+      &.tabs__btn::before {
+        opacity: 0;
+      }
+    }
+
+    &--bright {
+      margin: 0 0 0 auto;
+      padding-bottom: 15px;
+      background-color: #ffffff;
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+      border-radius: 5px 25px 5px 5px;
+      color: #1fc119;
+      font-weight: 500;
+
+      &.tabs__btn--active {
+        color: #fe4e1d;
+      }
+    }
+
+    &:hover {
+      box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1), 0 0 0 7px #e9ebef;
+      background-color: #ffffff;
+      z-index: 1;
+
+      &.tabs__btn::before {
+        opacity: 0;
+      }
+    }
+  }
+
+  &__content {
+    @include screen("smlim") {
+      padding: 0 5px;
+    }
+
+    @include screen("lg") {
+      padding: 0 0 35px;
+    }
+
+    &--dark {
+      background: #F4F4F4;
+
+      @include screen(smlim) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    display: none;
+    animation: fadeEffect 1s;
+
+    .title {
+      @include screen(smlim) {
+        padding-top: 20px;
+        font: 600 24px/32px Closer, sans-serif;
+      }
+
+      @include screen(lg) {
+        padding: 30px 0 0 30px;
+        font: 600 24px/32px Closer, sans-serif;
+      }
+    }
+
+    &-wrap {
+      background: #ffffff;
+    }
+
+    &--visible {
+      display: block;
+    }
+
+    &--spaced {
+      @include screen("sm") {
+        padding: 10px 15px;
+      }
+
+      @include screen("mdlim") {
+        padding: 20px 40px;
+      }
+    }
+
+    & .intro--spaced-sm {
+      @include screen("sm") {
+        line-height: 1.78;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .uk-slider-items {
+    @include screen("lg") {
+      transform: translate3d(0px, 0px, 0px) !important;
+      padding: 0 0 0 20px;
+    }
+  }
+
+  &__card {
+    @include screen(smlim) {
+      order: 1;
+    }
+  }
+
+  &-swiper:after {
+    @include screen("smlim") {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 30px;
+      background: linear-gradient(to left, #f7f7f7, rgba(255, 255, 255, 0));
+      z-index: 1;
+      pointer-events: none;
+    }
+  }
+
+  &-swiper {
+    background: #e9ebef;
+    border-radius: 30px 30px 0px 0px;
+  }
+
+  .tabs-swiper.swiper-container {
+    padding: 5px 5px 0;
+    max-width: 1160px;
+
+    @include screen(smlim) {
+      padding-right: 60px;
+    }
+
+    @include screen(lg) {
+      transform: translateX(5px);
+    }
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.uk-visible-toggle {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.uk-slider-container {
+  padding: 0;
+  overflow: hidden;
+}
+
+.uk-slider-items {
+  display: flex;
+  will-change: transform;
+}
+
+.uk-slider-items>* {
+  touch-action: pan-y;
+}

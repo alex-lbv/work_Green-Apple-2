@@ -1,0 +1,91 @@
+.basket {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 0 30px 30px 0;
+  color: #1c1d1e;
+  line-height: 1;
+  box-shadow: 0 0 0 5px #fff inset;
+  opacity: 1;
+  cursor: pointer;
+  overflow: hidden;
+  transition: opacity .5s, background .5s;
+
+  @include screen('smlim') {
+    width: 166px;
+    padding: 0 30px 0 20px;
+    background-color: #fff;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 3px;
+      height: 40px;
+      background-color: #E9EBEF;
+    }
+  }
+
+  @include screen('lg') {
+    padding: 0 75px 0 20px;
+  }
+
+  .header__bottom--long & {
+    @include screen('lg') {
+      border-radius: 0 30px 0 0;
+    }
+  }
+
+  .header__bottom--active  & {
+    @include screen(smlim){
+      opacity: 0;
+    }
+  }
+
+  &__text {
+    margin-left: 15px;
+  }
+
+  &__name {
+    display: block;
+    font: 500 16px/1.5 AvenirNext;
+  }
+
+  &__info {
+    font-size: 12px;
+    opacity: 0.5;
+  }
+
+  &__icon-wrap {
+
+    @include screen('lg') {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1 0 46px;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      box-shadow: 0px 2px 8px rgba(0, 26, 77, 0.08);
+    }
+  }
+
+  &__icon {
+    fill: url(#basket);
+
+    @include screen('smlim') {
+      width: 32px;
+      height: 30px;
+    }
+
+    @include screen('lg') {
+      width: 28px;
+      height: 26px;
+    }
+
+    .basket--full & {
+      fill: #15D743;
+    }
+  }
+}

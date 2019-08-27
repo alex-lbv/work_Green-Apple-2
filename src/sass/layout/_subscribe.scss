@@ -1,0 +1,158 @@
+.subscribe {
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 20px;
+  color: $white;
+  background-color: #222222;
+
+  @include screen(sm) {
+    flex-direction: column-reverse;
+  }
+
+  @include screen("mdlim") {
+    justify-content: space-between;
+    padding: 0 20px 0 35px;
+  }
+
+  @include screen("lg") {
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 130px 0 50px;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+
+    @include screen("sm") {
+      margin: 0 18px 20px 21px;
+    }
+
+    @include screen(mdlim) {
+      padding: 25px 0;
+    }
+
+    @include screen("lg") {
+      padding-top: 40px;
+    }
+  }
+
+  &__title {
+    @include screen(smlim) {
+      margin-bottom: 8px;
+      letter-spacing: -0.1px;
+      font: 500 24px/32px Closer;
+    }
+
+    @include screen(lg) {
+      margin-bottom: 13px;
+      letter-spacing: -0.1px;
+      font: 500 26px/34px Closer;
+    }
+  }
+
+  & p {
+    font: normal 14px/24px Roboto, sans-serif;
+
+    @include screen("sm") {
+      margin-bottom: 20px;
+    }
+
+    @include screen("md") {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__field {
+    @include screen("sm") {
+      margin-bottom: 21px;
+    }
+
+    @include screen("mdlim") {
+      margin-bottom: 10px;
+      width: 280px;
+    }
+
+    @include screen("lg") {
+      display: inline-flex;
+      width: 280px;
+      max-width: 100%;
+      margin-right: 1px;
+      margin-bottom: 0;
+    }
+  }
+
+  .field {
+    &__title {
+      margin-bottom: 10px;
+    }
+
+    &__input {
+      color: #2B2D30;
+    }
+  }
+
+  &__form {
+    display: flex;
+
+    @include screen("smlim") {
+      flex-direction: column;
+    }
+  }
+
+  & .btn {
+    padding: 10px 25px 11px;
+    border-radius: 12px;
+    color: $white;
+
+    @include screen(mdlim) {
+      max-width: 280px;
+    }
+
+    @include screen("lg") {
+      flex: 0.3;
+      align-self: flex-end;
+      margin-left: 10px;
+    }
+  }
+
+  &__image {
+    @include screen("sm") {
+      width: 100%;
+      height: auto;
+    }
+
+    @include screen("mdlim") {
+      width: 100%;
+      height: 100%;
+      max-height: none;
+    }
+
+    @include screen("md") {
+      max-width: 374px;
+      max-height: 276px;
+    }
+
+    &-wrap {
+      position: relative;
+
+      @include screen(sm) {
+        margin-bottom: -65px;
+      }
+
+      &::before {
+        @include screen(sm) {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(
+            180deg,
+            rgba(34, 34, 34, 0.0001) 0%,
+            #222222 100%
+          );
+        }
+      }
+    }
+  }
+}

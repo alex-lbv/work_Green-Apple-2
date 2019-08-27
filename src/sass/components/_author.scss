@@ -1,0 +1,47 @@
+.author {
+  display: flex;
+  align-items: center;
+
+  @include screen(smlim) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 12px;
+    margin-bottom: 10px;
+  }
+
+  @include screen(lg) {
+    padding-left: 11px;
+  }
+
+  &__info {
+    flex: 1;
+    line-height: 1;
+
+    @include screen(smlim) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__name {
+    font: 500 16px/1.63 Closer, sans-serif;
+  }
+
+  &__date {
+    font-size: 12px;
+    color: $txt-grey;
+    opacity: 0.45;
+  }
+
+  &__mark {
+    display: flex;
+    font: 500 28px/0.93 AvenirNext;
+    color: #4bd964;
+  }
+
+  &__star {
+    width: 24px;
+    height: 23px;
+    margin-left: 3px;
+    fill: #4bd964;
+  }
+}

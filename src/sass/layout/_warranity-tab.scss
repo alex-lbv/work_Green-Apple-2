@@ -1,0 +1,127 @@
+.warranity-tab {
+  &__wrap {
+    @include screen(smlim) {
+      margin-bottom: 40px;
+      padding: 20px 0;
+      background: #f2f3f5;
+      border-radius: 16px;
+    }
+
+    @include screen(lg) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .tab-col {
+    &--left {
+      @include screen(lg) {
+        padding: 0 0 0 8px;
+      }
+    }
+
+    &--right {
+      @include screen(lg) {
+        padding-left: 32px;
+      }
+    }
+
+    &--shifted {
+      @include screen(lg) {
+        width: 50%;
+      }
+    }
+  }
+
+  .tab-col--dark {
+    @include screen(smlim) {
+      padding-top: 20px;
+    }
+
+    @include screen(lg) {
+      padding: 28px 19px 15px;
+    }
+  }
+
+  .tabs__content--spaced {
+    @include screen(smlim) {
+      padding: 10px 0;
+    }
+  }
+
+  .feature {
+    @include screen(lg) {
+      align-items: flex-start;
+      padding-left: 25px;
+      margin-bottom: 26px;
+    }
+
+    &__content {
+      @include screen(smlim) {
+        margin-top: 0;
+        text-align: left;
+      }
+    }
+
+    &__text {
+      @include screen(smlim) {
+        font-size: 14px;
+        line-height: 22px;
+      }
+
+      &--improved {
+        @include screen(lg) {
+          padding-right: 140px;
+        }
+      }
+    }
+  }
+
+  .tab-features {
+    margin: 0;
+
+    @include screen(smlim) {
+      padding: 0 15px 0 25px;
+    }
+  }
+
+  .intro {
+    @include screen(smlim) {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    @include screen(lg) {
+      margin-bottom: 30px;
+    }
+
+    &--improved {
+      padding-left: 25px;
+    }
+  }
+
+  .accordion {
+    @include screen(smlim) {
+      margin-bottom: 20px;
+    }
+
+    &__content {
+      padding: 18px 50px 11px 22px;
+    }
+  }
+
+  .tabs-hr {
+    @include screen(smlim) {
+      display: none;
+    }
+
+    @include screen(lg) {
+      margin: 0 15px 20px;
+    }
+  }
+
+  .title {
+    @include screen(lg) {
+      margin-bottom: 15px;
+    }
+  }
+}

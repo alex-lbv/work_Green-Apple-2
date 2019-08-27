@@ -1,0 +1,163 @@
+.contacts {
+
+  @include screen('smlim') {
+    padding: 5px 15px;
+    margin-bottom: 25px;
+  }
+
+  @include screen('lg') {
+    padding: 0 18px;
+    margin-bottom: 35px;
+  }
+
+  .title {
+
+    @include screen('smlim') {
+      margin-bottom: 5px;
+    }
+  
+    @include screen('lg') {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__small-text {
+    font-size: 12px;
+    line-height: 13px;
+    color: rgba(#2B2D30, .5);
+
+    p {
+      margin-bottom: 7px;
+    }
+  }
+
+  &__row {
+    display: flex;
+
+    @include screen('sm') {
+      flex-direction: column;
+    }
+  }
+
+  &__col {
+    &:not(:last-child) {
+
+      @include screen('smlim') {
+        width: 100%;
+        flex: 1;
+        margin-bottom: 20px;
+      }
+    }
+
+    @include screen(lg) {
+      &:nth-child(1) {
+        width: 25.5%;
+        flex: 0 0 25.5%;
+      }
+      &:nth-child(2) {
+        width: 22.5%;
+        flex: 0 0 22.2%;
+      }
+    }
+  }
+
+  &__phone {
+    margin-bottom: 6px;
+
+    .title {
+      font-weight: 600;
+    }
+  }
+
+  &__map {
+    position: relative;
+    z-index: 1; // Border-radius solution for chrome and safari
+    overflow: hidden;
+    background-color: #fff;
+    height: 640px;
+
+    @include screen('smlim') {
+      margin: 0 10px 30px;
+      border-radius: 20px;
+    }
+  
+    @include screen('lg') {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__btn {
+    max-width: 195px;
+    padding: 13px 30px;
+    background: #e7fbec;
+    border-radius: 14px;
+    color: #1fc119;
+    font: 500 18px/24px Closer;
+    transition: color .5s,background .5s;
+
+    &:hover {
+      background: #36EB61;
+      color: #ffffff;
+    }
+
+    @include screen('smlim') {
+      margin-top: 15px;
+    }
+    @include screen('lg') {
+      margin-top: 20px;
+    }
+  }
+
+  &__address {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include screen('smlim') {
+      flex-direction: column;
+    }
+
+    span {
+      display: block;
+      font-size: 12px;
+      line-height: 14px;
+      opacity: .5;
+    }
+  }
+
+  &__address-col {
+    display: flex;
+    flex: 0 0 39%;
+    width: 39%;
+    margin-bottom: 13px;
+    margin-top: 1px;
+
+    &:nth-child(3n) {
+      width: 20%;
+      flex: 0 0 20%
+    }
+
+    @include screen('smlim') {
+      width: 100%;
+      flex: 1;
+
+      &:nth-child(3n) {
+        width: 100%;
+        flex: 1
+      }
+    }
+  }
+
+  &__address-icon {
+    width: 18px;
+    height: 18px;
+    margin: 2px 8px 0 0;
+  }
+
+  .label-title {
+    font: 700 12px/30px AvenirNext;
+    text-transform: uppercase;
+    opacity: .3;
+    margin-bottom: 5px;
+  }
+
+}

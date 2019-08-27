@@ -1,0 +1,250 @@
+.feature {
+  display: flex;
+
+  @include screen(smlim) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  @include screen("lg") {
+    align-items: center;
+  }
+
+  &--centered {
+    align-items: center;
+  }
+
+  br {
+    @include screen("sm") {
+      display: none;
+    }
+  }
+
+  &__icon {
+    &-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      overflow: hidden;
+
+      &--rounded {
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
+      }
+
+      &--squared {
+        max-width: 74px;
+        height: 74px;
+        border-radius: 24px;
+      }
+
+      &--gradient-green {
+        box-shadow: 0px 6px 20px rgba(79, 219, 104, 0.3);
+        background: linear-gradient(180deg, #82ee9d 0%, #4bd964 100%);
+      }
+
+      &--gradient-pink {
+        box-shadow: 0px 6px 20px rgba(249, 45, 87, 0.3);
+        background: linear-gradient(180deg, #fd578f 0%, #f92c56 100%);
+      }
+
+      &--gradient-dark-blue {
+        box-shadow: 0px 6px 20px rgba(28, 126, 254, 0.3);
+        background: linear-gradient(180deg, #38b2ff 0%, #1a7afe 100%);
+      }
+
+      &--gradient-light-blue {
+        box-shadow: 0px 6px 20px rgba(51, 194, 251, 0.3);
+        background: linear-gradient(180deg, #5ee1fd 0%, #30bffb 100%);
+      }
+
+      &--gradient-violet {
+        background: linear-gradient(180deg, #66abf9 0%, #3672f0 100%);
+        box-shadow: 0px 6px 20px rgba(28, 126, 254, 0.3);
+      }
+
+      &--gradient-orange {
+        background: linear-gradient(180deg, #ff9162 0%, #ff5833 100%);
+        box-shadow: 0px 6px 20px rgba(252, 88, 54, 0.3);
+      }
+
+      &--gradient-turquoise {
+        background: linear-gradient(180deg, #3ceedf 0%, #1cd9bb 100%);
+        box-shadow: 0px 6px 20px rgba(29, 218, 188, 0.3);
+      }
+
+      &--green {
+        background: #4bd964;
+        box-shadow: 0px 3px 12px rgba(75, 217, 100, 0.4);
+      }
+
+      &--dark-blue {
+        background: #1a7afe;
+        box-shadow: 0px 3px 12px rgba(26, 122, 255, 0.3);
+      }
+
+      &--light-blue {
+        background: #30bffb;
+        box-shadow: 0px 3px 12px rgba(48, 191, 251, 0.3);
+      }
+    }
+  }
+
+  &__content {
+    @include screen(smlim) {
+      margin-top: 15px;
+    }
+
+    @include screen(lg) {
+      margin-left: 20px;
+    }
+
+    .feature--centered & {
+      @include screen(lg) {
+        text-align-last: left;
+      }
+    }
+  }
+
+  &__title {
+    font: 500 18px/28px "Closer";
+  }
+
+  &__subtitle {
+    font: 500 18px/1.56 Closer;
+  }
+
+  &__text {
+    font-size: 16px;
+
+    @include screen("sm") {
+      white-space: normal;
+      line-height: 26px;
+
+      &--small {
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+
+    @include screen("md") {
+      line-height: 24px;
+
+      &--small {
+        font-size: 14px;
+        line-height: 30px;
+      }
+    }
+
+    &--improved {
+      @include screen(md) {
+        padding-right: 168px;
+        line-height: 1.67;
+      }
+    }
+  }
+
+  &--full {
+    @include screen("sm") {
+      align-items: flex-start;
+    }
+
+    @include screen("lg") {
+      align-items: center;
+    }
+  }
+
+  &--centered {
+    @include screen("lg") {
+      justify-content: center;
+      line-height: 1.63;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.features-main {
+  border-bottom: solid 1px #e2e2e2;
+
+  @include screen("smlim") {
+    margin-bottom: 20px;
+    padding: 40px 20px 12px 20px;
+    
+  }
+
+  @include screen("lg") {
+    padding: 60px 0 40px;
+    margin-bottom: 80px;
+  }
+
+  & .feature {
+    @include screen("sm") {
+      margin-bottom: 18px;
+    }
+
+    @include screen("mdlim") {
+      margin-bottom: 20px;
+    }
+  }
+
+  & .col {
+    @include screen(lg) {
+      flex: 0 0 auto;
+      &:not(:last-child) {
+        margin-right: 111px;
+      }
+    }
+  }
+
+  & .feature__icon-wrap {width: 74px;}
+
+  .feature__text {
+    @include screen(smlim) {
+      line-height: 18px;
+      font-size: 12px;
+    }
+  }
+
+  &__title {
+    margin: 0 auto;
+    max-width: 600px;
+
+    @include screen("smlim") {
+      margin-bottom: 30px;
+      font-size: 22px;
+      line-height: 29px;
+    }
+
+    @include screen(md) {
+      text-align: center;
+    }
+
+    @include screen("lg") {
+      margin-bottom: 55px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include screen(smlim) {
+      justify-content: space-around;
+    }
+
+    @include screen("mdlim") {
+      justify-content: space-around;
+    }
+
+    .col--25 {
+      @include screen(smlim) {
+        flex: 0 0 40%;
+      }
+    }
+  }
+}

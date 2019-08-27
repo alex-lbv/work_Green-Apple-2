@@ -1,0 +1,264 @@
+.main-slider {
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+
+  @include screen(sm) {
+    padding-top: 23px;
+  }
+
+  @include screen(md) {
+    padding-top: 15px;
+  }
+
+  .sticker {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 16px;
+
+    &--bright {
+      padding: 6px 16px 8px;
+    }
+  }
+
+  &__item {
+    .container {
+      display: flex;
+      flex: 0 0 100%;
+
+      @include screen(sm) {
+        min-height: 407px;
+        background: url("../img/pic/bg/slider-main-bg-mobile.jpg") bottom right/ 50% auto no-repeat;
+      }
+
+      @include screen(mdlim) {
+        min-height: 407px;
+        background: url("../img/pic/bg/slider-main-bg.jpg") 50% 100% no-repeat / auto 100%;
+      }
+
+      @include screen(lg) {
+        background: url('../img/pic/bg/slider-main-bg.jpg') 6% 0/ contain no-repeat;
+        justify-content: flex-end;
+        min-height: 425px;
+        padding-top: 26px;
+      }
+    }
+  }
+
+  &__content {
+    @include screen(smlim) {
+      flex: 0 1 100%;
+    }
+
+    @include screen(lg) {
+      flex: 0 1 39.5%;
+    }
+
+    &:first-of-type {
+      @include screen(sm) {
+        padding-bottom: 30%;
+      }
+
+      @include screen(smlim) {
+        padding-left: 29px;
+        flex: 0 1 100%;
+      }
+    }
+
+    &--none-mobile {
+      @include screen(sm) {
+        display: none;
+      }
+
+      @include screen(mdlim) {
+        margin-right: 5%;
+      }
+    }
+  }
+
+  &__title {
+    @include screen(smlim) {
+      padding-right: 100px;
+      margin-bottom: 11px;
+      font: 600 32px/42px Closer;
+    }
+
+    @include screen(lg) {
+      margin-bottom: 11px;
+      font: 600 42px/55px Closer;
+    }
+  }
+
+  &__text {
+    @include screen(smlim) {
+      margin-bottom: 16px;
+      padding-right: 20px;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    @include screen(lg) {
+      margin-bottom: 10px;
+      padding-right: 120px;
+    }
+  }
+
+  &__special {
+    font-size: 12px;
+    opacity: .4;
+
+    @include screen(smlim) {
+      margin: 10px 0;
+      max-width: 120px;
+      line-height: 16px;
+    }
+
+    @include screen(lg) {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      line-height: 2;
+    }
+  }
+
+  &__card {
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #e3e5e8;
+    }
+
+    .card {
+      box-shadow: none;
+      border-radius: 0;
+      background: rgba(242, 242, 242, 0.4);
+      transition: background .5s;
+
+      &:hover {
+        box-shadow: none;
+        background: #fff;
+      }
+    }
+
+    .card__description,
+    .card__buttons {
+      background: none;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    z-index: 1;
+    border: none;
+    background-color: transparent;
+
+    @include screen(smlim) {
+      top: calc(50% - 8px)
+    }
+
+    @include screen(lg) {
+      top: calc(50% - 32px)
+    }
+
+    &::after {
+      content: '';
+      position: relative;
+      display: inline-block;
+      border-top: 2px solid;
+      border-left: 2px solid;
+      border-radius: 3px 0 0 0;
+
+      @include screen(smlim) {
+        width: 12px;
+        height: 12px;
+        border-color: #4bd964;
+      }
+
+      @include screen(lg) {
+        width: 15px;
+        height: 15px;
+        opacity: .4;
+      }
+    }
+
+    &:hover {
+      &::after {
+        border-color: #4bd964;
+        opacity: 1;
+      }
+    }
+
+    &--prev {
+      @include screen(smlim) {
+        left: 6px;
+      }
+
+      @include screen(lg) {
+        left: 20px;
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+
+    &--next {
+      @include screen(smlim) {
+        right: 6px;
+      }
+
+      @include screen(lg) {
+        right: 20px;
+      }
+
+      &::after {
+        transform: rotate(-225deg);
+      }
+    }
+  }
+
+  &__aside {
+    align-self: flex-start;
+    border: 1px solid #E3E5E8;
+    border-radius: 20px;
+    background: rgba(242, 242, 242, 0.4);
+    overflow: hidden;
+
+    @include screen('lg') {
+      flex: 0 0 23%;
+      min-height: none !important;
+    }
+
+    .btn {
+      padding: 9px 15px 10px;
+      border-radius: 8px;
+      line-height: 21px;
+    }
+  }
+
+  .card {
+    &__image-wrap {
+      margin-right: 5px;
+
+      @include screen(smlim) {
+        height: 150px;
+      }
+    }
+
+    &__title {
+      margin-bottom: 4px;
+    }
+
+    .price {
+      margin-bottom: 5px;
+    }
+
+    &__buttons {
+      position: static;
+
+      @include screen(lg) {
+        padding: 0;
+      }
+    }
+  }
+
+}

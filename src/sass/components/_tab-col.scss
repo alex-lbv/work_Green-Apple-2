@@ -1,0 +1,41 @@
+.tab-col {
+  @include screen(lg) {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+  }
+
+  &--right {
+    @include screen(lg) {
+      float: right;
+      padding-left: 25px;
+    }
+  }
+
+  &--left {
+    @include screen(lg) {
+      float: left;
+      padding-right: 5px;
+    }
+  }
+
+  &--shifted {
+    @include screen("lg") {
+      width: 48%;
+      padding: 0 15px;
+    }
+  }
+
+  &--dark {
+    @include screen(lg) {
+      background-color: #f2f3f5;
+      border-radius: 20px;
+    }
+  }
+}
+
+.tab-question {
+  @include screen(smlim) {
+    order: 2;
+  }
+}

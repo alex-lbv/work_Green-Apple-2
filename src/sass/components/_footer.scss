@@ -1,0 +1,257 @@
+.footer {
+  @include screen("smlim") {
+    padding-top: 20px;
+  }
+
+  @include screen("lg") {
+    padding-top: 20px;
+  }
+
+  &__top {
+    @include screen("smlim") {
+      padding: 0 5px;
+    }
+
+    @include screen("lg") {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__bottom {
+    border-top: 1px solid #dfdfdf;
+    font-size: 12px;
+    line-height: 1;
+
+    @include screen("smlim") {
+      padding: 22px 30px;
+      margin: 0 -5px;
+    }
+
+    @include screen("lg") {
+      display: flex;
+      justify-content: space-between;
+      padding: 22px 0 26px;
+    }
+
+    span {
+      color: $txt-grey;
+      opacity: 0.4;
+    }
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font: 700 12px/2.33 AvenirNext;
+    color: rgba(#2b2d30, 0.3);
+  }
+
+  &__about {
+    position: relative;
+    flex: 0 0 29%;
+
+    @include screen("smlim") {
+      padding: 0 20px;
+      margin-bottom: 18px;
+    }
+
+    @include screen("lg") {
+      order: 1;
+      margin-right: 53px;
+      padding-bottom: 60px;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 20px;
+  }
+
+  &__promo {
+    font-size: 12px;
+    line-height: 1.5;
+    color: rgba(#333, .6);
+
+    @include screen("smlim") {
+      margin-bottom: 23px;
+    }
+
+    @include screen("lg") {
+      margin-bottom: 18px;
+    }
+  }
+
+  &__disclaimer {
+    max-width: calc(100vw - 20px);
+    font-size: 11px;
+    line-height: 1.64;
+    opacity: 0.4;
+
+    @include screen("smlim") {
+      margin: 15px 0 0;
+    }
+
+    @include screen("lg") {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      width: 620px;
+    }
+  }
+
+  &__copy-links {
+    @include screen("smlim") {
+      margin: 15px 0;
+    }
+
+    @include screen("lg") {
+      margin-left: 60px;
+    }
+
+    li {
+      @include screen("smlim") {
+        margin-bottom: 20px;
+      }
+
+      @include screen("lg") {
+        display: inline-block;
+        vertical-align: baseline;
+        padding: 0 25px;
+      }
+    }
+
+    a {
+      color: $txt-grey;
+      opacity: 0.4;
+      transition: opacity 0.5s;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &__contacts {
+    color: $txt-dark;
+
+    @include screen("smlim") {
+      padding: 0 0 0 20px;
+      margin-bottom: 38px;
+    }
+
+    @include screen("lg") {
+      padding: 0 94px 0 40px;
+      order: 3;
+    }
+  }
+
+  &__contacts-number {
+    margin: 5px 7px 7px 0;
+    font: normal 24px/32px Closer, sans-serif;
+  }
+
+  &__contacts-info {
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 1.08;
+    opacity: 0.7;
+  }
+
+  &__btn {
+    margin-top: 2px;
+    display: inline-block;
+    cursor: pointer;
+    transition: color 0.5s, background 0.5s;
+
+    &--light {
+      padding: 7px 20px;
+      font: 500 12px/14px Roboto, sans-serif;
+      background-color: rgba(21, 215, 67, 0.1);
+      color: #1fc119;
+      border-radius: 15px;
+
+      @include screen("smlim") {
+        margin-bottom: 15px;
+      }
+
+      @include screen("lg") {
+        margin-bottom: 17px;
+      }
+    }
+
+    &--green {
+      max-width: 165px;
+      padding: 8px 20px 9px;
+      font: normal 14px/18px Closer, sans-serif;
+      color: $white;
+      border-radius: 8px;
+    }
+
+    &:hover {
+      background-color: #1fc119;
+      color: #fff;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex: 1;
+
+    @include screen("smlim") {
+      margin-bottom: 17px;
+      padding: 0 20px;
+    }
+
+    @include screen("lg") {
+      order: 2;
+    }
+  }
+
+  &__nav-col {
+    flex: 1 0 auto;
+
+    &:first-of-type {
+      @include screen(sm) {
+        margin-right: 44px;
+      }
+    }
+  }
+
+  &__nav-item {
+    @include screen("smlim") {
+      margin-bottom: 8px;
+    }
+
+    @include screen("lg") {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__nav-link {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .list--simple {
+    margin-bottom: 12px;
+  }
+}
+
+.social__link {
+  transition: opacity 0.5s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.social__icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 17px;
+
+  &--vk {
+    width: 31px;
+  }
+}

@@ -1,0 +1,21 @@
+.tab-characteristic {
+  .tab-col {
+    &--left {
+      @include screen(lg) {
+        padding: 0 0 0 8px;
+      }
+    }
+
+    &--right {
+      @include screen(lg) {
+        padding-left: 32px;
+      }
+    }
+  }
+
+  .list__item:before {
+    @include screen(smlim) {
+      top: 7px;
+    }
+  }
+}

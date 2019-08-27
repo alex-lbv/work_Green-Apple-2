@@ -1,0 +1,51 @@
+.error {
+  text-align: center;
+  padding-bottom: 100px;
+
+  @include screen(smlim) {
+  }
+
+  @include screen(lg) {
+  }
+
+  &__title {
+    padding-top: 69px;
+    text-transform: uppercase;
+
+    @include screen(smlim) {
+      margin-bottom: 30px;
+      font: 600 48px / 63px Closer;
+    }
+
+    @include screen(lg) {
+      margin-bottom: 19px;
+      font: 600 80px / 106px Closer;
+    }
+  }
+
+  &__text {
+    @include screen(smlim) {
+      margin-bottom: 20px;
+      font: normal 18px / 21px Roboto;
+    }
+
+    @include screen(lg) {
+      margin-bottom: 36px;
+      font: normal 24px / 28px Roboto;
+    }
+  }
+
+  .btn {
+    padding: 14px 30px 16px;
+    max-width: 320px;
+    border-radius: 20px;
+
+    @include screen(smlim) {
+      font: normal 18px / 24px Closer;
+    }
+
+    @include screen(lg) {
+      font: normal 22px / 29px Closer;
+    }
+  }
+}

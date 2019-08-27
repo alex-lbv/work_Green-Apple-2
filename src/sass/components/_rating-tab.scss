@@ -1,0 +1,41 @@
+.rating-tab {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+
+  @include screen(smlim) {
+    margin: 5px 0 10px;
+  }
+
+  @include screen(lg) {
+    margin: 5px 0 20px;
+  }
+
+  &__stars {
+    display: flex;
+    margin-right: 15px;
+  }
+
+  &__star {
+    width: 15px;
+    height: 14px;
+    margin-right: 5px;
+  }
+
+  &__reviews {
+    display: block;
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 2px solid #dcdcdc;
+    border-radius: 1px;
+    font-size: 13px;
+    color: #1fc119;
+    transition: opacity .5s;
+    white-space: nowrap;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+}

@@ -1,0 +1,220 @@
+.story {
+  @include screen("smlim") {
+    margin-bottom: 40px;
+    padding-top: 5px;
+  }
+
+  @include screen("lg") {
+    margin-bottom: 40px;
+    padding-top: 10px;
+    border-radius: 0 0 30px 30px;
+  }
+
+  &__header {
+    @include screen("smlim") {
+      margin-bottom: 15px;
+      padding: 0 0 0 10px;
+    }
+
+    @include screen("lg") {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 51px 0 50px;
+      margin-bottom: 33px;
+    }
+  }
+
+  &__inner {
+    border-radius: 20px;
+    overflow: hidden;
+
+    @include screen(smlim) {
+      margin: 0 -5px;
+    }
+
+    @include screen("lg") {
+      background-color: #fff;
+    }
+  }
+
+  &__title {
+    max-width: 800px;
+
+    @include screen("smlim") {
+      margin-bottom: 15px;
+      font: 500 24px/32px Closer;
+    }
+
+    @include screen(lg) {
+      font: 500 38px/50px Closer;
+    }
+  }
+
+  &__sub-title {
+    font: 400 18px/21px AvenirNext;
+    margin-bottom: 15px;
+  }
+
+  &__date {
+    padding: 7px 15px 6px;
+    border-radius: 6px;
+    background-color: rgba(0,152,255,.2);
+    color: #0098ff;
+  }
+
+  &__main-pic-wrap {
+    overflow: hidden;
+
+    @include screen(smlim) {
+      height: 240px;
+      margin-bottom: 0;
+    }
+
+    @include screen(lg) {
+      height: 520px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__main-pic {
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: none;
+    max-height: none;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+
+  &__content {
+    background-color: #fff;
+    border-radius: 0 0 20px 20px;
+
+    @include screen("smlim") {
+      padding: 19px 20px 30px;
+      margin-bottom: 10px;
+    }
+
+    @include screen("lg") {
+      width: 67%;
+      padding-top: 21px;
+      padding-right: 75px;
+    }
+  }
+
+  &__wrap {
+    @include screen("lg") {
+      display: flex;
+      align-items: flex-start;
+      padding: 0 0px 30px 50px;
+    }
+  }
+
+  &__text {
+    @include screen("smlim") {
+      margin-bottom: 30px;
+      line-height: 22px;
+    }
+
+    @include screen("lg") {
+      margin-bottom: 40px;
+      line-height: 24px;
+      font-size: 16px;
+    }
+
+    &--size-big {
+      @include screen("smlim") {
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      @include screen("lg") {
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__image {
+    width: 100%;
+
+    @include screen("mdlim") {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+
+  &__image-wrap {
+    display: block;
+    font-size: 0;
+
+    @include screen("smlim") {
+      margin: 0 -30px 20px -30px;
+    }
+
+    @include screen("mdlim") {
+      text-align: center;
+    }
+
+    @include screen("lg") {
+      margin-bottom: 45px;
+    }
+  }
+
+}
+
+.interesting-stories {
+  padding: 20px;
+  background: #F2F3F5;
+  border-radius: 12px;
+
+  @include screen("smlim") {
+    width: 100%;
+    padding: 20px 5px;
+  }
+
+  @include screen("lg") {
+    width: 32%;
+  }
+
+  &__title {
+    font: 600 18px/normal "AvenirNext";
+    margin-bottom: 20px;
+    padding-top: 3px;
+
+    @include screen("smlim") {
+      padding: 0 10px;
+    }
+  }
+
+  &__item {
+    @include screen("smlim") {
+      margin-bottom: 25px;
+    }
+
+    @include screen("lg") {
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 7px;
+      }
+    }
+  }
+
+  .announce__pic {
+    height: 200px;
+    margin-bottom: 16px;
+  }
+
+  .announce__content {
+    padding: 0 0 0 10px;
+}
+}

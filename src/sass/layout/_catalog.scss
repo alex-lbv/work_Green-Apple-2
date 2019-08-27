@@ -1,0 +1,317 @@
+.catalog {
+
+  &__carousel {
+    @include screen('smlim') {
+      padding-bottom: 30px;
+      margin-bottom: 40px;
+      border-bottom: 1px solid #dfdfdf;
+    }
+  }
+
+  &__top {
+
+    @include screen('md') {
+      background-color: #fff;
+      box-shadow: 0 -56px #fff;
+    }
+
+    @include screen(mdlim) {
+      background: linear-gradient(to bottom, white 105px, transparent 100px);
+    }
+  }
+
+  &__top-func {
+    display: flex;
+
+    @include screen('sm') {
+      flex-direction: column;
+      padding-bottom: 15px;
+    }
+
+    @include screen('md') {
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid rgba(139, 139, 139, 0.07);
+      ;
+    }
+  }
+
+  &__benefits {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 4px;
+    width: 100%;
+    max-width: 57.5%;
+
+    @include screen('smlim') {
+      display: none;
+    }
+
+    .feature {
+      display: inline-flex;
+      justify-content: flex-start;
+    }
+
+    .feature__text {
+      font-size: 14px;
+    }
+
+    .feature__content {
+      margin-left: 15px;
+    }
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+
+    @include screen(smlim) {
+      flex-direction: column;
+      margin-bottom: 40px;
+    }
+
+    @include screen(lg) {
+      padding-bottom: 60px;
+      border-bottom: 1px solid #DFDFDF;
+      margin-bottom: 60px;
+    }
+
+    .filter__wrap {
+      @include screen(lg) {
+        flex: .184;
+      }
+    }
+
+    .price__old,
+    .price__discount {
+      @include screen(sm) {
+        font-size: 14px;
+        margin-right: 10px;
+      }
+    }
+
+    .price__current--size-md {
+      @include screen(sm) {
+        font-size: 22px;
+        line-height: 35px;
+      }
+    }
+
+    .btn--size-s {
+      @include screen(sm) {
+        padding: 3px 30px;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include screen(sm) {
+      margin-bottom: 2px;
+    }
+
+    @include screen(md) {
+      margin-bottom: 10px;
+    }
+
+    &-wrap {
+      @include screen(lg) {
+        flex: .97;
+        order: 2;
+      }
+
+      .pagination {
+        @include screen(lg) {
+          padding-right: 10px;
+        }
+      }
+
+    }
+  }
+
+  &__item {
+    @include screen(sm) {
+      width: 100%;
+      margin-bottom: 10px;
+
+      &:nth-of-type(2n-1) {
+        padding-right: 3px;
+      }
+
+      &:nth-of-type(2n) {
+        padding-left: 3px;
+      }
+    }
+
+    @include screen(mdlim) {
+      margin-bottom: 10px;
+      width: calc(100% / 3);
+
+      &:nth-of-type(3n-1) {
+        padding: 0 10px;
+      }
+    }
+
+    @include screen(lg) {
+      padding-left: 5px;
+      margin-bottom: 5px;
+      width: calc(100% / 4);
+    }
+  }
+
+  hr {
+    margin-bottom: 40px;
+  }
+
+  &__func {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include screen('smlim') {
+      padding-bottom: 10px;
+      margin-bottom: 5px;
+    }
+
+    @include screen('lg') {
+      padding-bottom: 14px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__func-bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__sort-label {
+    font: 600 14px/1 AvenirNext;
+    margin-right: 11px;
+
+    @include screen('smlim') {
+      display: none;
+    }
+  }
+
+  &__filter-btn {
+    display: flex;
+    align-items: center;
+    min-width: 143px;
+    border-radius: 12px;
+    margin-right: 10px;
+    padding: 8px 15px 9px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: background .5s;
+
+    &--active {
+      background-color: #e7e7e7;
+    }
+
+    @include screen('lg') {
+      display: none;
+    }
+  }
+
+  &__filter-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    fill: #333;
+  }
+
+  .card__buttons .btn {
+    padding: 10px 25px;
+    font-family: Closer;
+    font-size: 16px;
+  }
+
+  .card {
+
+    @include screen('sm') {
+      padding: 14px 0 10px;
+      text-align: left;
+    }
+  }
+
+  .choices__list--single {
+    @include screen('smlim') {
+      padding: 5px 16px 5px 4px;
+    }
+
+    @include screen('lg') {
+      padding: 9px 16px 9px 4px;
+    }
+  }
+
+  .card__description {
+    overflow: hidden;
+  }
+
+  .card__image-wrap {
+    @include screen('sm') {
+      float: left;
+      width: 140px;
+      height: 187px;
+      margin: 0;
+      padding: 0px 20px;
+    }
+  }
+
+  .card__stickers {
+    @include screen(sm) {
+      text-align: left;
+    }
+  }
+
+  .card__buttons {
+
+    @include screen(sm) {
+      padding: 0 15px 6px 15px;
+    }
+
+    @include screen(md) {
+      padding: 10px 15px 6px 15px;
+    }
+  }
+
+  .card__title {
+    @include screen(sm) {
+      font-family: Closer;
+      padding: 0 10px 11px 0;
+      justify-content: flex-start;
+      margin-bottom: 0;
+      font-size: 14px;
+      line-height: 24px;
+      border-bottom: none;
+      text-align: left;
+    }
+  }
+
+  .price--columned {
+    @include screen('sm') {
+      padding-top: 10px;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      border-top: 1px solid #E9EBEF;
+    }
+  }
+
+  .price__profit--rowed {
+    @include screen('sm') {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  .price__discount {
+    @include screen('sm') {
+      margin: 0;
+    }
+  }
+}

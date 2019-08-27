@@ -1,0 +1,341 @@
+.page-head {
+  display: flex;
+
+  @include screen("sm") {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 30px;
+    height: 420px;
+    margin-bottom: 30px;
+  }
+
+  @include screen("md") {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  @include screen("lg") {
+    height: 280px;
+    padding: 0 66px 0 52px;
+  }
+
+  &__content {
+    @include screen("smlim") {
+      max-width: 60%;
+    }
+
+    @include screen("lg") {
+      max-width: 49.5%;
+    }
+
+    .page-head--orange & {
+      @include screen("lg") {
+        max-width: 61.5%;
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    line-height: normal;
+    font-family: "Closer";
+
+    @include screen("smlim") {
+      margin-bottom: 15px;
+      font-size: 24px;
+    }
+
+    @include screen("lg") {
+      margin-bottom: 10px;
+      font-size: 48px;
+    }
+
+    .page-head--orange & {
+      margin-bottom: 15px;
+    }
+
+    .page-head--purple & {
+      @include screen("lg") {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &__text,
+  &__list {
+    line-height: 24px;
+
+    @include screen("mdlim") {
+      font-size: 16px;
+    }
+  }
+
+  &__text {
+    .page-head--orange & {
+      @include screen("smlim") {
+        margin-bottom: 13px;
+      }
+
+      @include screen("lg") {
+        margin-bottom: 30px;
+      }
+    }
+
+    .page-head--purple & {
+      @include screen("smlim") {
+        margin-bottom: 15px;
+      }
+
+      @include screen("lg") {
+        margin-bottom: 31px;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .page-head--purple & {
+      @include screen ("smlim") {
+        margin-bottom: 18px;
+        max-width: 266px;
+      }
+
+      @include screen ("lg") {
+        margin-bottom: 14px;
+        max-width: 480px;
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 23px;
+
+    .page-head--orange & {
+      margin-bottom: 10px;
+
+      @include screen("smlim") {
+        flex: 0 0 100%;
+      }
+
+      @include screen("lg") {
+        flex: 0 0 100%;
+      }
+    }
+
+    .page-head--purple & {
+      @include screen("sm") {
+        margin-bottom: 12px;
+      }
+
+      @include screen("mdlim") {
+        margin-bottom: 6px;
+      }
+
+      @include screen("lg") {
+        margin-bottom: 10px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 5px;
+      width: 15px;
+      height: 15px;
+      background: url("../img/pic/ico/check.svg") no-repeat;
+    }
+  }
+
+  &--blue {
+    @include screen(smlim) {
+      background: url(../img/pic/warranity.svg) no-repeat 9px 10px / 195px auto;
+      padding: 107px 10px 20px;
+      height: auto;
+      margin-bottom: 0;
+    }
+    
+    @include screen(lg) {
+      background: url("../img/pic/warranity.svg") no-repeat 98% 50%;
+      height: 208px;
+      padding: 33px 66px 0 19px;
+      margin-bottom: 50px;
+    }
+    
+    .page-head__title {    
+      @include screen(lg) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &--orange {
+    background: url("../img/pic/pay-delivery.svg") no-repeat;
+
+    @include screen("smlim") {
+      background-position: 15px 6px;
+      background-size: 95px auto;
+      padding: 118px 0 12px 15px;
+      border-bottom: 1px solid #cbcbcb;
+      margin-bottom: 20px;
+      height: auto;
+    }
+
+    @include screen("lg") {
+      padding: 34px 39px;
+      background-position: 84% 50%;
+      background-size: 320px auto;
+      height: auto;
+      margin-bottom: 47px;
+    }
+
+    .page-head__content {max-width: 100%;}
+  }
+
+  &--purple {
+    background: url("../img/pic/credit.svg") no-repeat;
+
+    @include screen("smlim") {
+      background-position: 16px 9px;
+      background-size: 95px auto;
+      margin-bottom: 10px;
+      padding: 125px 0 15px 15px;
+      height: auto;
+
+      .page-head__content {
+        max-width: 100%;
+      }
+    }
+
+    @include screen("lg") {
+      background-position: 93% 50%;
+      padding: 85px 0 65px 39px;
+      height: 373px;
+      margin-bottom: 34px;
+    }
+
+    .page-head__bordered-list {
+      padding-top: 22px;
+      padding-left: 0;
+    }
+  }
+
+  &--grey {
+    position: relative;
+    background: url("../img/pic/phones/mob-boom.jpg") no-repeat 93% 100%;
+
+    @include screen("smlim") {
+      background-position: 10px 10px;
+      background-size: 286px,cover;
+      padding: 218px 10px 18px 10px;
+      height: auto;
+
+      .page-head__content {
+        max-width: 100%;
+      }
+    }
+
+    @include screen("lg") {
+      margin-top: -27px;
+      margin-bottom: 10px;
+      padding: 2px 0 0 39px;
+      height: 310px;
+      border-bottom: 1px solid #DBDEE4;
+    }
+
+    .page-head__title {
+      margin-bottom: 15px;
+    }
+
+    .btn {
+    
+      @include screen("smlim") {
+        padding: 10px 15px;
+        max-width: 400px;
+      }
+
+      @include screen("lg") {
+        padding: 10px 30px;
+        width: auto;
+      }
+    }
+  }
+
+  &__icon {
+    width: 15px;
+    height: 15px;
+    fill: #4bd964;
+
+    @include screen("smlim") {
+      margin-top: 3px;
+      margin-right: 10px;
+    }
+
+    @include screen("lg") {
+      margin-right: 5px;
+    }
+  }
+
+  &__bordered-list {
+    position: relative;
+
+    @include screen("smlim") {
+      padding: 5px 0 15px 22px;
+    }
+
+    @include screen("lg") {
+      padding: 3px 0 3px 24px;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      height: 1px;
+      width: 100%;
+      opacity: 0.4;
+      background-color: #cbcbcb;
+
+      @include screen("smlim") {
+        left: 0;
+      }
+
+      @include screen("lg") {
+        left: -6%;
+      }
+    }
+
+    li {
+      opacity: .9;
+
+      @include screen("sm") {
+        margin-bottom: 20px;
+        line-height: 20px;
+      }
+
+      @include screen("mdlim") {
+        margin-bottom: 12px;
+        line-height: 20px;
+      }
+
+      @include screen("lg") {
+        margin-bottom: 15px;
+        line-height: 22px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,362 @@
+body {
+  font: 14px/1.7 Roboto, sans-serif;
+  background-color: #f2f2f2;
+  color: $txt-grey;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: $txt-grey;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+button {
+  border: none;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: url(../img/bg/header.png) no-repeat 50% 0 / 100% auto;
+}
+
+.wrapper-white {
+  background: white;
+}
+
+.container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 10px;
+
+  &__content {
+    display: flex;
+
+    @include screen(sm) {
+      flex-direction: column-reverse;
+    }
+
+    @include screen(md) {
+      justify-content: space-between;
+    }
+
+    .title {
+      @include screen(lg) {
+        flex: 0 0 33%;
+      }
+    }
+
+    .catalog__benefits {
+      @include screen(sm) {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 15px;
+        max-width: none;
+      }
+
+      @include screen(mdlim) {
+        display: flex;
+      }
+
+      @include screen(lg) {
+        align-items: flex-end;
+      }
+
+      .feature {
+        @include screen(sm) {
+          flex: 0 0 33%;
+        }
+      }
+
+      .feature__content {
+        @include screen(sm) {
+          margin: 6px 0 0 0;
+        }
+      }
+
+      .feature__text {
+        @include screen(sm) {
+          font-size: 11px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+}
+
+.colorful-block {
+  background-image: linear-gradient(to bottom, #fff 20%, rgba(255, 255, 255, 0) 45%, rgba(255, 255, 255, 0));
+
+  @include screen(smlim) {
+    margin-bottom: 23px;
+  }
+
+  @include screen(lg) {
+    margin-bottom: 55px;
+  }
+}
+
+.content {
+  flex: auto;
+}
+
+.title {
+  font-family: "Closer";
+
+  @include screen(smlim) {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  @include screen(lg) {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: normal;
+  }
+
+  &--size-md {
+    margin-bottom: 15px;
+
+    @include screen(smlim) {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    @include screen(lg) {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+
+  &--size-sm {
+    margin-bottom: 10px;
+
+    @include screen(smlim) {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    @include screen(lg) {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+
+  &--size-lg {
+    margin-bottom: 15px;
+
+    @include screen(smlim) {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: normal;
+    }
+
+    @include screen(lg) {
+      font-size: 48px;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+
+  &--lh-normal {
+    line-height: normal;
+  }
+
+  &--mb {
+    @include screen(smlim) {
+      margin-bottom: 15px;
+    }
+
+    @include screen(lg) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &--small {
+    @include screen(smlim) {
+      margin-bottom: 15px;
+      font: normal 18px/24px AvenirNext, sans-serif;
+    }
+
+    @include screen(lg) {
+      margin-bottom: 15px;
+      font: normal 18px/24px AvenirNext, sans-serif;
+    }
+  }
+}
+
+.intro {
+  font-size: 18px;
+  line-height: 1.67;
+
+  &--spaced-xs {
+    @include screen("smlim") {
+      margin-bottom: 20px;
+    }
+
+    @include screen("lg") {
+      margin-bottom: 40px;
+    }
+  }
+
+  &--spaced-sm {
+    margin-bottom: 30px;
+  }
+
+  &--improved {
+    letter-spacing: 0.06px;
+    line-height: 1.8;
+    padding-right: 9px;
+  }
+}
+
+hr {
+  opacity: 0.9;
+  border: solid .5px #e2e2e2;
+
+  @include screen("sm") {
+    margin: 0 0 20px;
+  }
+
+  @include screen("lg") {
+    margin: 0 0 30px;
+  }
+
+  &.hr--60 {
+    @include screen("sm") {
+      margin: 0 0 40px;
+    }
+
+    @include screen("lg") {
+      margin: 0 0 60px;
+    }
+  }
+
+  &.hr--none-mobile {
+    @include screen(smlim) {
+      display: none;
+    }
+  }
+}
+
+.wide-wrapper {
+  border: solid 1px #dfdfdf;
+  border-radius: 0.5px;
+  background-color: #ffffff;
+  width: 100%;
+
+  @include screen("smlim") {
+    margin-bottom: 40px;
+  }
+
+  @include screen("lg") {
+    margin-bottom: 60px;
+  }
+}
+
+pre {
+  font-family: inherit;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.shift {
+  padding-left: 20px;
+
+  @include screen("sm") {
+    padding-left: 15px;
+    line-height: normal;
+  }
+}
+
+.shift-mob {
+  @include screen("smlim") {
+    padding-left: 15px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1000;
+  transition: opacity 0.5s;
+}
+
+.bg-visible {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+* {
+  outline: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.uk-lightbox {
+  background-color: #fff;
+}
+
+.uk-lightbox-button {
+  opacity: 0.4;
+
+  svg {
+    height: 20px;
+
+    * {
+      stroke-width: 3px;
+    }
+  }
+}
+
+.uk-lightbox-toolbar-icon {
+  opacity: 0.3;
+
+  line {
+    stroke-width: 6px;
+  }
+}

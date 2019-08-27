@@ -1,0 +1,153 @@
+.warranity {
+  margin-bottom: 60px;
+
+  @include screen("sm") {
+    padding: 0 10px;
+  }
+
+  &__title {
+    @include screen("smlim") {
+      margin-bottom: 15px;
+    }
+
+    @include screen("lg") {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__content {
+    @include screen("smlim") {
+      position: relative;
+      padding-bottom: 370px;
+      padding-top: 16px;
+    }
+
+    @include screen("lg") {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding-top: 10px;
+      margin: 0 -20px 55px;
+    }
+  }
+
+  &__text {
+    @include screen("smlim") {
+      margin-bottom: 40px;
+    }
+
+    @include screen('lg') {
+      .warranity__col:first-child & {
+        padding-left: 40px;
+        margin-bottom: 40px;
+      }
+  
+      .warranity__col:last-child & {
+        padding-left: 20px;
+      }
+    }
+  }
+
+  &__subtitle {
+    font-family: Closer;
+    font-weight: 500;
+    line-height: normal;
+
+    @include screen("smlim") {
+      font-size: 16px;
+      margin-bottom: 22px;
+    }
+
+    @include screen("lg") {
+      margin-bottom: 27px;
+      font-size: 18px;
+    }
+  }
+
+  &__features {
+    border-radius: 16px;
+    box-shadow: 0 10px 28px 0 rgba(0, 0, 0, 0.06);
+    background-color: #ffffff;
+
+    @include screen("smlim") {
+      padding: 15px 10px 20px 15px;
+      position: absolute;
+      left: -10px;
+      right: -10px;
+      bottom: 0;
+      width: 300px;
+
+      .feature__content {
+        margin-top: 0;
+        padding-left: 13px;
+      }
+    }
+
+    @include screen("lg") {
+      padding: 35px 15px 35px 40px;
+      margin-right: -20px;
+    }
+  }
+
+  &__feature {
+    @include screen("smlim") {
+      margin-bottom: 20px;
+      flex-direction: row;
+      text-align: left;
+    }
+
+    @include screen("lg") {
+      margin-bottom: 30px;
+    }
+  }
+
+  .feature__text--small {
+
+    @include screen("mdlim") {
+      line-height: 22px;
+    }
+
+    @include screen("lg") {
+      line-height: 26px;
+      font-size: 16px;
+    }
+  }
+
+  .feature__icon-wrap--squared {min-width: 74px;}
+
+  .title {
+
+    @include screen("mdlim") {
+      margin-bottom: 12px;
+    }
+
+    @include screen("lg") {
+      padding-left: 40px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__col {
+    @include screen(lg){
+      width: 50%;
+      padding: 0 20px;
+    }
+  }
+
+  .list {
+    @include screen("lg") {
+      margin-bottom: 50px;
+    }
+
+    li {
+      margin-bottom: 20px;
+      line-height: 24px;
+    }
+  }
+
+  .faq {
+    @include screen(smlim) {
+      margin: 0 -10px 40px;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.frame {
+  border-radius: 20px;
+  background: $white;
+
+  &--dark {
+    background-color: #F2F3F5;
+  }
+
+  &--bordered {
+    border: solid 1px #e9ebef;
+  }
+
+  &--shadowed {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.07);
+  }
+
+  &--rounded {
+    border-radius: 35px 6px 6px 6px;
+  }
+
+  &--wide {
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+  }
+
+  &--wide-m {
+    border-bottom: 1px solid rgba(219, 222, 228, 0.87);
+    border-radius: 0.5px;
+    background: transparent;
+
+    &:first-of-type {
+      border-top: 1px solid rgba(219, 222, 228, 0.87);
+    }
+  }
+
+  &--border-radius-12 {
+    border-radius: 12px;
+  }
+}

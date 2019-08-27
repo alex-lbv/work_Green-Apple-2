@@ -1,0 +1,85 @@
+.faq {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.05);
+  padding-top: 30px;
+  overflow: hidden;
+  margin-bottom: 60px;
+
+  &--big-margin {
+    margin-bottom: 80px;
+  }
+
+  &__title {
+    @include screen("smlim") {
+      padding: 0 15px;
+      margin-bottom: 15px;
+    }
+
+    @include screen("lg") {
+      padding: 0 40px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &--white {
+    @include screen("smlim") {
+      padding-top: 17px;
+      margin-bottom: 40px;
+
+      .faq__title {
+        margin-bottom: 12px;
+      }
+    }
+
+    .accordion {
+      border-top: 1px solid #e9ebef;
+    }
+
+    .accordion__body:not(:last-of-type) {
+      padding-bottom: 0;
+    }
+
+    .accordion__title {
+      border-radius: 0;
+
+      @include screen("smlim") {
+        padding: 10px 40px 9px 15px;
+        line-height: 21px;
+        min-height: 53px;
+        display: flex;
+        align-items: center;
+      }
+  
+      @include screen("lg") {
+        padding: 20px 40px 20px 40px;
+        border-bottom: 1px solid #E9EBEF;
+      }
+
+      &:before {
+        top: 18px;
+        width: 14px;
+        height: 14px;
+
+        @include screen("smlim") {
+          right: 17px;
+        }
+    
+        @include screen("lg") {
+          right: 30px;
+        }
+      }
+    }
+
+    .accordion__content {
+      @include screen("smlim") {
+        padding: 20px 15px 20px;
+        line-height: 20px;
+      }
+  
+      @include screen("lg") {
+        padding: 30px 50px 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.site-map {
+  margin-top: 20px;
+
+  &__wrapper {
+    padding-left: 20px;
+  }
+
+  &__list {
+    position: relative;
+
+    &--md {
+      margin-top: 10px;
+    }
+
+    &--sm {
+      box-shadow: -19px 0 0 #f2f2f2;
+      padding-top: 5px;
+      margin-top: 4px;
+    }
+  }
+
+  &__item {
+    &--lg {
+      margin-bottom: 14px;
+      font: 500 18px / normal AvenirNext;
+      color: $txt-dark;
+    }
+
+    &--md {
+      padding: 4px 0 11px 15px;
+      border-left: 1px solid #15d743;
+      font: normal 14px/16px Roboto;
+      color: #30373d;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+
+    &--sm {
+      padding: 4px 0 6px 11px;
+      border-left: 1px solid #15d743;
+      font: 400 12px/14px Roboto;
+      color: #30373d;
+    }
+  }
+}
