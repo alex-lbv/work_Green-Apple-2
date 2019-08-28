@@ -1,40 +1,38 @@
-<button class="btn" uk-toggle="target: #popup-add-review" type="button">Попапчик 'Добавить отзыв'</button>
+<button class="btn" data-uk-toggle="target: #popup-add-review" type="button">Попапчик 'Добавить отзыв'</button>
 
-<div id="popup-add-review" class="uk-flex-top popup" uk-modal>
+<div id="popup-add-review" class="uk-flex-top popup" data-uk-modal>
     <div class="uk-modal-dialog uk-margin-auto-vertical popup__inner popup__inner--lg">
         <svg class="popup__close popup__close--below uk-modal-close">
-            <use xlink:href="img/symbol/sprite.svg#close"></use>
+            <use xlink:href="img/symbol/sprite.svg#close" />
         </svg>
         <h2 class="title">Добавить отзыв</h2>
         <p class="popup__text popup__text--mb-25">Вам понравилось покупать у нас или есть замечания? Поделитесь своими
             впечатлениями в форме ниже:</p>
-        <form class="popup__form" action="">
+        <form class="popup__form">
             <div class="popup__container row">
                 <div class="col">
                     <div class="field form__field">
                         <label for="" class="field__title field__title--green field__title--pointed-green">Плюсы</label>
-                        <textarea class="field__input field__input--shaded field__input--radius-12" name="" id=""
-                            cols="" rows="2"></textarea>
+                        <textarea class="field__input field__input--shaded field__input--radius-12" rows="2"></textarea>
                     </div>
                     <div class="field form__field">
                         <label for="" class="field__title field__title--red field__title--pointed-red">Минусы</label>
-                        <textarea class="field__input field__input--shaded field__input--radius-12" name="" id=""
-                            cols="" rows="2"></textarea>
+                        <textarea class="field__input field__input--shaded field__input--radius-12" rows="2"></textarea>
                     </div>
                     <div class="field form__field">
-                        <label class="field__title field__title--gray field__title--pointed-gray" for="">Комментарий</label>
+                        <label class="field__title field__title--gray field__title--pointed-gray">Комментарий</label>
                         <textarea class="field__input field__input--mh-120 field__input--shaded field__input--radius-12"
-                            name="" id="" cols="" rows="5"></textarea>
+                            rows="5"></textarea>
                     </div>
                 </div>
                 <div class="col">
                     <div class="field">
-                        <label class="field__title" for="">Имя</label>
-                        <input class="field__input field__input--shaded field__input--radius-12" type="" name="" id="">
+                        <label class="field__title">Имя</label>
+                        <input class="field__input field__input--shaded field__input--radius-12" type="text">
                     </div>
                     <div class="field">
-                        <label class="field__title" for="">Электронная почта</label>
-                        <input class="field__input field__input--shaded field__input--radius-12" type="" name="" id="">
+                        <label class="field__title">Электронная почта</label>
+                        <input class="field__input field__input--shaded field__input--radius-12" type="text">
                     </div>
                 </div>
             </div>
