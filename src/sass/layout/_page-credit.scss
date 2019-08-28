@@ -199,7 +199,7 @@
     }
 
     @include screen("lg") {
-      margin: 62px auto 0px;
+      margin: 62px auto 40px;
     }
 
     &:after {
@@ -240,6 +240,7 @@
     }
 
     @include screen("smlim") {
+      padding: 0;
       width: 48px;
       line-height: 48px;
       box-shadow: 0 0 0 10px #fff;
@@ -250,6 +251,7 @@
     }
 
     @include screen("lg") {
+      padding: 0;
       width: 68px;
       line-height: 68px;
       box-shadow: 0 0 0 20px #fff;
@@ -297,6 +299,7 @@
     padding: 10px 0 7px;
     margin-bottom: 10px;
     border: 1px solid #eee;
+    cursor: default;
 
     &__icon {
       display: inline-block;
