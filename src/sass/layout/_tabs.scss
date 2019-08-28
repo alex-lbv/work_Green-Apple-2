@@ -50,13 +50,13 @@
       color: #2b2d30;
       opacity: 0.3;
 
-      @include screen(sm) {
+      @include screen(smlim) {
         bottom: -22px;
         left: 13px;
         font: 600 13px / 19px AvenirNext, sans-serif;
       }
 
-      @include screen(md) {
+      @include screen(lg) {
         bottom: -29px;
         left: 21px;
         font: 600 14px / 19px AvenirNext, sans-serif;
