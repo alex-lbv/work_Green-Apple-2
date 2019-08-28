@@ -212,10 +212,6 @@
     @include screen(smlim) {
       padding-right: 60px;
     }
-
-    @include screen(lg) {
-      transform: translateX(5px);
-    }
   }
 
   &__hr {
