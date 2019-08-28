@@ -21,10 +21,6 @@
   }
 
   &__content {
-    @include screen("smlim") {
-      max-width: 60%;
-    }
-
     @include screen("lg") {
       max-width: 49.5%;
     }
@@ -163,15 +159,15 @@
       height: auto;
       margin-bottom: 0;
     }
-    
+
     @include screen(lg) {
       background: url("../img/pic/warranity.svg") no-repeat 98% 50%;
       height: 208px;
       padding: 33px 66px 0 19px;
       margin-bottom: 50px;
     }
-    
-    .page-head__title {    
+
+    .page-head__title {
       @include screen(lg) {
         margin-bottom: 20px;
       }
@@ -198,7 +194,9 @@
       margin-bottom: 47px;
     }
 
-    .page-head__content {max-width: 100%;}
+    .page-head__content {
+      max-width: 100%;
+    }
   }
 
   &--purple {
@@ -235,7 +233,7 @@
 
     @include screen("smlim") {
       background-position: 10px 10px;
-      background-size: 286px,cover;
+      background-size: 286px, cover;
       padding: 218px 10px 18px 10px;
       height: auto;
 
@@ -257,7 +255,7 @@
     }
 
     .btn {
-    
+
       @include screen("smlim") {
         padding: 10px 15px;
         max-width: 400px;

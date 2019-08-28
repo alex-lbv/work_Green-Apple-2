@@ -217,6 +217,16 @@
       transform: translateX(5px);
     }
   }
+
+  &__hr {
+    @include screen(smlim) {
+      margin: 0 10px 15px;
+    }
+
+    @include screen(lg) {
+      display: none;
+    }
+  }
 }
 
 @keyframes fadeEffect {

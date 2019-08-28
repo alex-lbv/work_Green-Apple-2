@@ -227,7 +227,7 @@
 
       @include screen("sm") {
         float: left;
-        width: 28%;
+        width: 35%;
         margin: 0 14px 0 0;
       }
 
@@ -262,13 +262,34 @@
       justify-content: initial;
       line-height: 14px;
 
+      @include screen (smlim) {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 10px;
+        max-width: 122px;
+        border-top: 1px solid #E9EBEF;
+      }
+
       @include screen("lg") {
         margin-bottom: 7px;
       }
     }
 
     .price__profit {
-      margin-right: 26px;
+      @include screen(smlim) {
+        flex-direction: row;
+        align-items: center;
+      }
+
+      @include screen(lg) {
+        margin-right: 26px;
+      }
+
+      .price__old {
+        @include screen(smlim) {
+          margin-right: 10px;
+        }
+      }
     }
 
     .card__description {
@@ -285,7 +306,7 @@
         font-size: 0;
 
         @include screen("sm") {
-          margin-bottom: 2px;
+          margin-bottom: 5px;
           line-height: 24px;
         }
 
@@ -648,8 +669,8 @@
         cursor: pointer;
       }
 
-      &>.card__image-wrap img,
-      &>.card__description {
+      &.card__image-wrap img,
+      &~.card__description {
         opacity: 0.5;
       }
 

@@ -29,6 +29,10 @@
       padding-top: 10px;
       margin: 0 -20px 55px;
     }
+
+    .list {
+      opacity: .8;
+    }
   }
 
   &__text {
@@ -41,7 +45,7 @@
         padding-left: 40px;
         margin-bottom: 40px;
       }
-  
+
       .warranity__col:last-child & {
         padding-left: 20px;
       }
@@ -113,7 +117,9 @@
     }
   }
 
-  .feature__icon-wrap--squared {min-width: 74px;}
+  .feature__icon-wrap--squared {
+    min-width: 74px;
+  }
 
   .title {
 
@@ -128,7 +134,7 @@
   }
 
   &__col {
-    @include screen(lg){
+    @include screen(lg) {
       width: 50%;
       padding: 0 20px;
     }
