@@ -56,15 +56,31 @@
     }
 
     .card--micro {
+      @include screen(smlim) {
+        padding: 10px 5px;
+      }
+
       .card__title {
         @include screen(smlim) {
-          padding-right: 50px;
+          padding-right: 35px;
           margin-bottom: 10px;
         }
 
         @include screen(lg) {
           max-width: 300px;
           font-weight: 500;
+        }
+      }
+
+      .card__counter {
+        @include screen(smlim) {
+          margin-right: 10px;
+        }
+
+        &-text {
+          @include screen(smlim) {
+            min-width: 32px;
+          }
         }
       }
 
@@ -78,8 +94,10 @@
       .price__profit--rowed {
         @include screen(smlim) {
           flex-direction: row;
+          flex-wrap: wrap;
           align-items: center;
           padding: 0;
+          margin-bottom: 4px;
         }
 
         @include screen(lg) {
@@ -88,6 +106,10 @@
       }
 
       .price__old {
+        @include screen(smlim) {
+          margin-right: 5px;
+        }
+
         @include screen(lg) {
           font-size: 14px;
         }
@@ -103,7 +125,7 @@
 
       .price__current {
         @include screen(smlim) {
-          padding-left: 22px;
+          align-self: center;
           font-size: 17px;
           line-height: 20px;
         }
@@ -209,7 +231,7 @@
       }
     }
 
-    .btn--quest {  
+    .btn--quest {
       padding: 15px;
       background: #F2F3F5;
       border: 1px solid #EEEEEE;
@@ -336,9 +358,11 @@
       border: 1px solid #E2E2E2;
       color: rgba(#333, .5);
       border-radius: 12px;
+
       @include screen(smlim) {
         font: 500 14px / 24px Closer;
       }
+
       @include screen(lg) {
         font: 500 18px / 24px Closer;
       }
@@ -444,7 +468,7 @@
     @include screen('lg') {
       padding-left: 0;
       padding-bottom: 0;
-      padding-right: 200px; 
+      padding-right: 200px;
     }
 
     &:after {

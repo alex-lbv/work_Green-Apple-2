@@ -70,11 +70,12 @@
     .accordion__content {
       @include screen("smlim") {
         padding: 20px 15px 20px;
-        line-height: 20px;
+        font: 400 14px/20px Roboto, sans-serif;
       }
 
       @include screen("lg") {
         padding: 30px 50px 30px;
+        font: 400 14px/17px Roboto, sans-serif;
       }
     }
   }
