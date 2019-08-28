@@ -23,25 +23,33 @@
   list-style: none;
   overflow: hidden;
 
+  @include screen(sm) {
+    min-height: 63px;
+  }
+
   &:first-of-type {
     @include screen(sm) {
       border-top: 1px solid #e9ebef;
     }
   }
+
   &:last-of-type {
     @include screen(smlim) {
       border-radius: 0 0 20px 20px;
     }
   }
+
   .filter__wrap &:last-of-type {
     @include screen(smlim) {
       border-radius: 20px;
     }
   }
+
   &:not(:last-of-type) {
     @include screen(smlim) {
       border-bottom: 1px solid #e9ebef;
     }
+
     @include screen(lg) {
       padding-bottom: 5px;
     }
@@ -78,7 +86,7 @@
   }
 }
 
-.uk-open > .accordion__title::before {
+.uk-open>.accordion__title::before {
   transform: rotate(45deg);
 }
 
