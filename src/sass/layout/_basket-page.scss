@@ -56,6 +56,10 @@
     }
 
     .card--micro {
+      @include screen(smlim) {
+        padding: 10px 5px;
+      }
+
       .card__title {
         @include screen(smlim) {
           padding-right: 35px;
@@ -71,6 +75,12 @@
       .card__counter {
         @include screen(smlim) {
           margin-right: 10px;
+        }
+
+        &-text {
+          @include screen(smlim) {
+            min-width: 32px;
+          }
         }
       }
 
