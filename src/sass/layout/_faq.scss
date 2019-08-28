@@ -32,10 +32,6 @@
       }
     }
 
-    .accordion {
-      border-top: 1px solid #e9ebef;
-    }
-
     .accordion__body:not(:last-of-type) {
       padding-bottom: 0;
     }
@@ -50,7 +46,7 @@
         display: flex;
         align-items: center;
       }
-  
+
       @include screen("lg") {
         padding: 20px 40px 20px 40px;
         border-bottom: 1px solid #E9EBEF;
@@ -64,7 +60,7 @@
         @include screen("smlim") {
           right: 17px;
         }
-    
+
         @include screen("lg") {
           right: 30px;
         }
@@ -76,7 +72,7 @@
         padding: 20px 15px 20px;
         line-height: 20px;
       }
-  
+
       @include screen("lg") {
         padding: 30px 50px 30px;
       }
