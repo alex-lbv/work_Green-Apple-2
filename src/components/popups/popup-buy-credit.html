@@ -1,11 +1,11 @@
-<button class="btn" uk-toggle="target: #popup-buy-credit" type="button">
+<button class="btn" data-uk-toggle="target: #popup-buy-credit" type="button">
     Попапчик 'Купить в кредит'
 </button>
 
-<div id="popup-buy-credit" class="uk-flex-top popup" uk-modal>
+<div id="popup-buy-credit" class="uk-flex-top popup" data-uk-modal>
     <div class="uk-modal-dialog uk-margin-auto-vertical popup__inner popup__inner--md">
         <svg class="popup__close popup__close--below uk-modal-close">
-            <use xlink:href="img/symbol/sprite.svg#close"></use>
+            <use xlink:href="img/symbol/sprite.svg#close" />
         </svg>
         <h2 class="title title--mb-30">Купить в кредит</h2>
         <div class="popup__container">
@@ -74,16 +74,17 @@
                     </div>
                 </div>
                 <div class="field">
-                    <label class="field__title" for="">Ваш возраст:</label>
-                    <input class="field__input field__input--sm field__input--shaded field__input--radius-12" type="" name="" id="" />
+                    <label class="field__title">Ваш возраст:</label>
+                    <input class="field__input field__input--sm field__input--shaded field__input--radius-12"
+                        type="text" />
                 </div>
             </div>
             <p class="popup__text popup__text--big popup__text--mb-20">
                 Напишите свой номер и мы позвоним Вам в течение 5 минут
             </p>
             <div class="field">
-                <label class="field__title" for="">Телефон</label>
-                <input class="field__input field__input--shaded field__input--radius-12" type="" name="" id="" />
+                <label class="field__title">Телефон</label>
+                <input class="field__input field__input--shaded field__input--radius-12" />
             </div>
         </div>
         <a href="" class="btn btn--bg-green btn--size-lg">Отправить заявку</a>
