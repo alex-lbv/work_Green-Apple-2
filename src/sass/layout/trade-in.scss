@@ -19,7 +19,18 @@
     }
 
     &--mb-lg {
-      margin-bottom: 31px;
+      @include screen(lg) {
+        margin-bottom: 31px;
+      }
+    }
+
+    &-wrap {
+      @include screen(smlim) {
+        padding: 20px 0 20px;
+        margin-bottom: 31px;
+        background: #F2F3F5;
+        border-radius: 16px;
+      }
     }
   }
 

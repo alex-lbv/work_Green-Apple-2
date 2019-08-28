@@ -18,16 +18,16 @@
   }
 
   .tab-col--left {
-    background: #f2f3f5;
     border-radius: 20px;
 
     @include screen(smlim) {
-      padding: 20px 0 0;
+      padding: 0;
       margin-bottom: 20px;
     }
 
     @include screen(lg) {
       padding: 30px 0 15px;
+      background: #f2f3f5;
     }
   }
 
