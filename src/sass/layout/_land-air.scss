@@ -7,31 +7,31 @@
   &__title {
     &--sm {
       @include screen(smlim) {
-        font: bold 18px / 28px AvenirNext, sans-serif;
+        font: bold 18px / 28px Closer, sans-serif;
       }
 
       @include screen(lg) {
-        font: bold 24px / normal AvenirNext, sans-serif;
+        font: bold 24px / normal Closer, sans-serif;
       }
     }
 
     &--md {
       @include screen(smlim) {
-        font: bold 18px / 28px AvenirNext, sans-serif;
+        font: bold 18px / 28px Closer, sans-serif;
       }
 
       @include screen(lg) {
-        font: bold 32px / normal AvenirNext, sans-serif;
+        font: bold 32px / normal Closer, sans-serif;
       }
     }
 
     &--lg {
       @include screen(smlim) {
-        font: bold 28px / 36px AvenirNext, sans-serif;
+        font: bold 28px / 36px Closer, sans-serif;
       }
 
       @include screen(lg) {
-        font: bold 38px / normal AvenirNext, sans-serif;
+        font: bold 38px / normal Closer, sans-serif;
       }
     }
   }
@@ -58,11 +58,11 @@
 
     &--lg {
       @include screen(smlim) {
-        font: bold 18px / 25px AvenirNext, sans-serif;
+        font: bold 18px / 25px Closer, sans-serif;
       }
 
       @include screen(lg) {
-        font: bold 18px / normal AvenirNext, sans-serif;
+        font: bold 18px / normal Closer, sans-serif;
       }
     }
   }

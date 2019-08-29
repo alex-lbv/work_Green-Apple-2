@@ -42,7 +42,7 @@
   .card .card__button-big {
     padding: 17px 15px;
     border-radius: 25px;
-    font: 600 16px/1 AvenirNext;
+    font: 600 16px/1 Closer;
 
     @include screen('smlim') {
       font-size: 16px;
@@ -65,7 +65,7 @@
 
   &__title {
     flex: 1 0 100%;
-    font: 600 18px/1 AvenirNext;
+    font: 600 18px/1 Closer;
     margin-top: 5px;
 
     @include screen('smlim') {
@@ -252,7 +252,7 @@
     display: flex;
     align-items: center;
     border-bottom: 1px solid #dbdee4;
-    font: 500 18px/1.44 AvenirNext;
+    font: 500 18px/1.44 Closer;
 
     @include screen('smlim') {
       padding: 12px;
@@ -336,7 +336,7 @@
       & span {
         display: block;
         padding: 10px 10px 12px 20px;
-        font: 600 16px/40px AvenirNext;
+        font: 600 16px/40px Closer;
         white-space: nowrap;
       }
     }
@@ -349,7 +349,7 @@
     border: 1px solid #e9ebef;
     border-radius: 6px;
     padding: 16px 46px 16px 16px;
-    font-family: AvenirNext;
+    font-family: Closer;
     line-height: 20px;
     font-weight: 600;
     cursor: pointer;
