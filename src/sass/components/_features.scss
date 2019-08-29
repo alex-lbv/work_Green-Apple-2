@@ -174,7 +174,7 @@
   @include screen("smlim") {
     margin-bottom: 20px;
     padding: 40px 20px 12px 20px;
-    
+
   }
 
   @include screen("lg") {
@@ -195,13 +195,16 @@
   & .col {
     @include screen(lg) {
       flex: 0 0 auto;
+
       &:not(:last-child) {
         margin-right: 111px;
       }
     }
   }
 
-  & .feature__icon-wrap {width: 74px;}
+  & .feature__icon-wrap {
+    width: 74px;
+  }
 
   .feature__text {
     @include screen(smlim) {
@@ -216,8 +219,7 @@
 
     @include screen("smlim") {
       margin-bottom: 30px;
-      font-size: 22px;
-      line-height: 29px;
+      font: 600 22px/29px Closer;
     }
 
     @include screen(md) {
@@ -226,6 +228,7 @@
 
     @include screen("lg") {
       margin-bottom: 55px;
+      font: 600 32px/42px Closer;
     }
   }
 

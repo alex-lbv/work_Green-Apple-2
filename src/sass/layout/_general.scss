@@ -112,15 +112,15 @@ button {
   font-family: "Closer";
 
   @include screen(smlim) {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 1.5;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
   }
 
   @include screen(lg) {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 32px;
-    line-height: normal;
+    line-height: 42px;
   }
 
   &--size-md {
