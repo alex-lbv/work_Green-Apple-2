@@ -80,7 +80,7 @@
     margin-bottom: 13px;
     padding: 0 22px 11px 22px;
     border-bottom: 1px solid #e9ebef;
-    font: 500 16px/1.63 AvenirNext;
+    font: 500 16px/1.63 Closer;
 
     @include screen("smlim") {
       padding: 0 12px 11px 12px;
@@ -447,7 +447,7 @@
       padding: 0;
       border: none;
       min-height: 0;
-      font: 600 14px/1.71 AvenirNext;
+      font: 600 14px/1.71 Closer;
     }
 
     & .card__buttons {
@@ -574,11 +574,11 @@
       border: none;
 
       @include screen(smlim) {
-        font: 500 12px/1.67 AvenirNext;
+        font: 500 12px/1.67 Closer;
       }
 
       @include screen(lg) {
-        font: 500 14px/1.86 AvenirNext;
+        font: 500 14px/1.86 Closer;
       }
     }
 

@@ -1,4 +1,5 @@
 .land-air {
+  padding: 0;
   border-radius: 20px;
   border: solid 1px #e2e2e2;
   text-align: center;
@@ -7,31 +8,31 @@
   &__title {
     &--sm {
       @include screen(smlim) {
-        font: bold 18px / 28px AvenirNext, sans-serif;
+        font: bold 18px / 28px Closer, sans-serif;
       }
 
       @include screen(lg) {
-        font: bold 24px / normal AvenirNext, sans-serif;
+        font: bold 24px / normal Closer, sans-serif;
       }
     }
 
     &--md {
       @include screen(smlim) {
-        font: bold 18px / 28px AvenirNext, sans-serif;
+        font: bold 18px / 28px Closer, sans-serif;
       }
 
       @include screen(lg) {
-        font: bold 32px / normal AvenirNext, sans-serif;
+        font: bold 32px / normal Closer, sans-serif;
       }
     }
 
     &--lg {
       @include screen(smlim) {
-        font: bold 28px / 36px AvenirNext, sans-serif;
+        font: bold 28px / 36px Closer, sans-serif;
       }
 
       @include screen(lg) {
-        font: bold 38px / normal AvenirNext, sans-serif;
+        font: bold 38px / normal Closer, sans-serif;
       }
     }
   }
@@ -58,11 +59,11 @@
 
     &--lg {
       @include screen(smlim) {
-        font: bold 18px / 25px AvenirNext, sans-serif;
+        font: bold 18px / 25px Closer, sans-serif;
       }
 
       @include screen(lg) {
-        font: bold 18px / normal AvenirNext, sans-serif;
+        font: bold 18px / normal Closer, sans-serif;
       }
     }
   }
@@ -138,7 +139,7 @@
     }
 
     @include screen(lg) {
-      top: 310px;
+      top: 315px;
       height: 282px;
     }
   }
@@ -235,7 +236,7 @@
 
     @include screen(lg) {
       padding: 0 229px 500px;
-      background: url("../img/pic/bg/land-air-hands.jpg") center bottom/ 1170px
+      background: url("../img/pic/bg/land-air-hands.jpg") center bottom/ 1180px
           492px no-repeat,
         #ffffff;
     }

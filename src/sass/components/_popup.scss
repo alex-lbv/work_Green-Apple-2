@@ -41,11 +41,11 @@
       color: #2b2d30;
 
       @include screen(sm) {
-        font: 600 14px/1.71 AvenirNext;
+        font: 600 14px/1.71 Closer;
       }
 
       @include screen(md) {
-        font: 600 24px/1.5 AvenirNext;
+        font: 600 24px/1.5 Closer;
       }
     }
   }

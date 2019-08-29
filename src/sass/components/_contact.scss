@@ -3,7 +3,7 @@
 
     &__text {
         margin-bottom: 13px;
-        font: 600 14px/normal AvenirNext;
+        font: 600 14px/normal Closer;
     }
 
     &__number {
@@ -11,11 +11,11 @@
         color: #2b2d30;
 
         @include screen(sm) {
-            font: 500 28px/normal AvenirNext;
+            font: 500 28px/normal Closer;
         }
 
         @include screen(md) {
-            font: 500 32px/normal AvenirNext;
+            font: 500 32px/normal Closer;
         }
     }
 

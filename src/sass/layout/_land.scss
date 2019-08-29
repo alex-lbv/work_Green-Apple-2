@@ -263,6 +263,7 @@
       }
     }
   }
+
   &__grad {
     display: -webkit-box;
     background-clip: text;
@@ -284,18 +285,18 @@
     &--top {
       @include screen(smlim) {
         margin-bottom: 25px;
-        font: normal 20px / normal AvenirNext, sans-serif;
+        font: normal 20px / normal Closer, sans-serif;
       }
 
       @include screen(lg) {
         margin-bottom: 30px;
-        font: normal 33px / normal AvenirNext, sans-serif;
+        font: normal 33px / normal Closer, sans-serif;
       }
     }
 
     &--sm {
       margin-bottom: 20px;
-      font: 500 24px / normal AvenirNext, sans-serif;
+      font: 500 24px / normal Closer, sans-serif;
     }
 
     &--md {
@@ -305,25 +306,25 @@
       @include screen(smlim) {
         margin-bottom: 20px;
         padding-left: 25px;
-        font: bold 18px / normal AvenirNext, sans-serif;
+        font: bold 18px / normal Closer, sans-serif;
       }
 
       @include screen(lg) {
         margin-bottom: 30px;
         padding-left: 50px;
-        font: bold 32px / normal AvenirNext, sans-serif;
+        font: bold 32px / normal Closer, sans-serif;
       }
     }
 
     &--lg {
       @include screen(smlim) {
         margin-bottom: 20px;
-        font: bold 28px / 1.29 AvenirNext, sans-serif;
+        font: bold 28px / 1.29 Closer, sans-serif;
       }
 
       @include screen(lg) {
         margin-bottom: 25px;
-        font: bold 56px / normal AvenirNext, sans-serif;
+        font: bold 56px / normal Closer, sans-serif;
       }
     }
   }
@@ -555,7 +556,7 @@
       &--top {
         @include screen(lg) {
           margin-bottom: 20px;
-          font: normal 55px / normal AvenirNext, sans-serif;
+          font: normal 55px / normal Closer, sans-serif;
         }
       }
     }
@@ -1191,6 +1192,7 @@
             margin-bottom: 25px;
           }
         }
+
         .land__title {
           @include screen(smlim) {
             padding-left: 0;
@@ -1442,11 +1444,11 @@
       &--top {
         @include screen(smlim) {
           margin-bottom: 20px;
-          font: 500 28px/36px AvenirNext, sans-serif;
+          font: 500 28px/36px Closer, sans-serif;
         }
 
         @include screen(lg) {
-          font: 500 48px/66px AvenirNext, sans-serif;
+          font: 500 48px/66px Closer, sans-serif;
         }
       }
 
@@ -1520,7 +1522,7 @@
           text-align: left;
 
           @include screen(smlim) {
-            font: 500 18px/28px AvenirNext, sans-serif;
+            font: 500 18px/28px Closer, sans-serif;
           }
 
           @include screen(lg) {
@@ -1557,10 +1559,11 @@
     .land__title {
       &--top {
         @include screen(smlim) {
-          font: 500 28px/36px AvenirNext, sans-serif;
+          font: 500 28px/36px Closer, sans-serif;
         }
+
         @include screen(lg) {
-          font: 500 56px/76px AvenirNext, sans-serif;
+          font: 500 56px/76px Closer, sans-serif;
         }
       }
 
@@ -1569,7 +1572,7 @@
         align-self: center;
 
         @include screen(smlim) {
-          font: 500 18px/28px AvenirNext, sans-serif;
+          font: 500 18px/28px Closer, sans-serif;
         }
 
         @include screen(lg) {
@@ -1597,7 +1600,8 @@
         @include screen(lg) {
           position: relative;
           align-self: flex-end;
-          padding-right: 459px;
+          margin-right: 135px;
+          max-width: 450px;
         }
       }
     }
@@ -1738,7 +1742,7 @@
         }
 
         @include screen(lg) {
-          margin: -330px 0 0;
+          margin: -420px 0 0;
           max-width: 1169px;
           max-height: 626px;
           box-shadow: 0 20px 0 #fafafa;
@@ -1898,11 +1902,11 @@
       &--top {
         @include screen(smlim) {
           margin-bottom: 20px;
-          font: 500 28px/36px AvenirNext, sans-serif;
+          font: 500 28px/36px Closer, sans-serif;
         }
 
         @include screen(lg) {
-          font: 500 48px/66px AvenirNext, sans-serif;
+          font: 500 48px/66px Closer, sans-serif;
         }
       }
 
@@ -1946,15 +1950,13 @@
       @include screen(sm) {
         padding-top: 70%;
         margin-bottom: 60px;
-        background: url("../img/pic/phones/land-7-4-mobile.jpg") top center/
-          contain no-repeat;
+        background: url("../img/pic/phones/land-7-4-mobile.jpg") top center/ contain no-repeat;
       }
 
       @include screen(mdlim) {
         padding-top: 35%;
         margin-bottom: 60px;
-        background: url("../img/pic/phones/land-7-4-mobile.jpg") top right/ 50%
-          no-repeat;
+        background: url("../img/pic/phones/land-7-4-mobile.jpg") top right/ 50% no-repeat;
       }
 
       @include screen(lg) {
@@ -1980,7 +1982,7 @@
           text-align: left;
 
           @include screen(smlim) {
-            font: 500 18px/28px AvenirNext, sans-serif;
+            font: 500 18px/28px Closer, sans-serif;
           }
 
           @include screen(lg) {
@@ -2038,7 +2040,7 @@
 
         @include screen(lg) {
           margin-bottom: 60px;
-          max-width: 1170px;
+          max-width: 1180px;
           max-height: 571px;
         }
       }
@@ -2085,6 +2087,7 @@
 
         @include screen(lg) {
           padding: 10px 100px 0px 90px;
+          width: 100%;
         }
 
         .land__image {
@@ -2162,6 +2165,7 @@
             padding-left: 100px;
           }
         }
+
         .land__title {
           @include screen(smlim) {
             padding-left: 0;
