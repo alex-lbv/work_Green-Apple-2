@@ -360,3 +360,37 @@ pre {
     stroke-width: 6px;
   }
 }
+
+.privacy {
+  padding: 40px 0;
+
+  @include screen(smlim) {
+    padding: 20px 10px;
+  }
+
+  ol {
+    margin: 1em 0;
+    list-style-type: decimal;
+
+    @include screen(smlim) {
+      padding: 0 0 0 20px;
+    }
+
+    @include screen(lg) {
+      padding: 0 0 0 40px;
+    }
+  }
+
+  li {
+    display: list-item;
+    padding-bottom: 15px;
+  }
+
+  a {
+    color: blue;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
