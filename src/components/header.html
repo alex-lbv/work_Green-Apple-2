@@ -36,12 +36,13 @@
     </div>
     <div class="header__bottom" data-uk-sticky="top">
       <nav class="menu">
-        <div class="menu__btn js-btn-toggle">
+        <div class="menu__btn" data-uk-toggle="#menu-mobile">
           <svg class="menu__btn-icon">
             <use xlink:href="img/symbol/sprite.svg#hamburger" />
           </svg>
           <span class="menu__btn-text">Меню</span>
         </div>
+
         <ul class="menu__cats">
           <li class="menu__item">
             <span class="menu__cats-name menu__cats-name--opened menu__cats-name--dropdown">iPhone</span>
@@ -187,6 +188,89 @@
             </ul>
           </li>
         </ul>
+
+
+        <div class="menu-mobile" id="menu-mobile" uk-offcanvas="overlay:true; mode: none;">
+          <div class="uk-offcanvas-bar">
+            <ul class="menu-mobile__list" uk-accordion>
+              <li class="uk-open">
+                <a class="uk-accordion-title" href="#">Item 1</a>
+                <div class="uk-accordion-content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua.</p>
+                </div>
+              </li>
+              <li>
+                <a class="uk-accordion-title" href="#">Item 2</a>
+                <div class="uk-accordion-content">
+                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor reprehenderit.</p>
+                </div>
+              </li>
+              <li>
+                <a class="uk-accordion-title" href="#">Item 3</a>
+                <div class="uk-accordion-content">
+                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                    Excepteur sint occaecat cupidatat proident.</p>
+                </div>
+              </li>
+              <li>
+                <a class="uk-accordion-title" href="#">Item 2</a>
+                <div class="uk-accordion-content">
+                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor reprehenderit.</p>
+                </div>
+              </li>
+              <li>
+                <a class="uk-accordion-title" href="#">Item 3</a>
+                <div class="uk-accordion-content">
+                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                    Excepteur sint occaecat cupidatat proident.</p>
+                </div>
+              </li>
+              <li>
+                <a class="uk-accordion-title" href="#">Item 2</a>
+                <div class="uk-accordion-content">
+                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor reprehenderit.</p>
+                </div>
+              </li>
+              <li>
+                <a class="uk-accordion-title" href="#">Item 3</a>
+                <div class="uk-accordion-content">
+                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                    Excepteur sint occaecat cupidatat proident.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
       </nav>
 
       <div class="header__search header__search--bottom search js-open-search">

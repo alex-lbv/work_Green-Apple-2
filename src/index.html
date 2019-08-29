@@ -1060,6 +1060,17 @@
     </div>
   </div>
   <div class="bg"></div>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script>
+    $(window).scroll(function () {
+      var offsetTop = $(this).scrollTop();
+      console.log(offsetTop);
+      var bar = $('#menu-mobile').find('.uk-offcanvas-bar');
+      var top = 130 - offsetTop;
+      $(bar).css('top', top);
+    });
+  </script>
   <script src="js/scripts.min.js"></script>
 </body>
 

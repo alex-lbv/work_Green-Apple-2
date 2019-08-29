@@ -100,6 +100,8 @@
     font-size: 16px;
 
     @include screen('smlim') {
+      display: none;
+
       position: absolute;
       top: calc(100% - 25px);
       left: 0;
@@ -296,5 +298,19 @@
     font-size: 14px;
     line-height: 16px;
     font-weight: 500;
+  }
+}
+
+.menu-mobile {
+  @include screen(lg) {
+    display: none;
+  }
+
+  &__list {
+    @include screen(smlim) {
+      box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.15);
+      background-color: #ffffff;
+      line-height: normal;
+    }
   }
 }

@@ -2,7 +2,7 @@
 //= swiper.js
 //= ../../node_modules/choices.js/public/assets/scripts/choices.min.js
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   //= components/slider-carousel.js
   //= components/menu.js
   //= components/search.js
