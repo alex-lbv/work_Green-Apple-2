@@ -263,6 +263,7 @@
       }
     }
   }
+
   &__grad {
     display: -webkit-box;
     background-clip: text;
@@ -1191,6 +1192,7 @@
             margin-bottom: 25px;
           }
         }
+
         .land__title {
           @include screen(smlim) {
             padding-left: 0;
@@ -1559,6 +1561,7 @@
         @include screen(smlim) {
           font: 500 28px/36px Closer, sans-serif;
         }
+
         @include screen(lg) {
           font: 500 56px/76px Closer, sans-serif;
         }
@@ -1597,7 +1600,8 @@
         @include screen(lg) {
           position: relative;
           align-self: flex-end;
-          padding-right: 459px;
+          margin-right: 135px;
+          max-width: 450px;
         }
       }
     }
@@ -1738,7 +1742,7 @@
         }
 
         @include screen(lg) {
-          margin: -330px 0 0;
+          margin: -420px 0 0;
           max-width: 1169px;
           max-height: 626px;
           box-shadow: 0 20px 0 #fafafa;
@@ -1946,15 +1950,13 @@
       @include screen(sm) {
         padding-top: 70%;
         margin-bottom: 60px;
-        background: url("../img/pic/phones/land-7-4-mobile.jpg") top center/
-          contain no-repeat;
+        background: url("../img/pic/phones/land-7-4-mobile.jpg") top center/ contain no-repeat;
       }
 
       @include screen(mdlim) {
         padding-top: 35%;
         margin-bottom: 60px;
-        background: url("../img/pic/phones/land-7-4-mobile.jpg") top right/ 50%
-          no-repeat;
+        background: url("../img/pic/phones/land-7-4-mobile.jpg") top right/ 50% no-repeat;
       }
 
       @include screen(lg) {
@@ -2038,7 +2040,7 @@
 
         @include screen(lg) {
           margin-bottom: 60px;
-          max-width: 1170px;
+          max-width: 1180px;
           max-height: 571px;
         }
       }
@@ -2085,6 +2087,7 @@
 
         @include screen(lg) {
           padding: 10px 100px 0px 90px;
+          width: 100%;
         }
 
         .land__image {
@@ -2162,6 +2165,7 @@
             padding-left: 100px;
           }
         }
+
         .land__title {
           @include screen(smlim) {
             padding-left: 0;
