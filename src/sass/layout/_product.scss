@@ -662,6 +662,7 @@
     }
 
     &-title {
+      display: inline-block;
       transition: transform .5s;
 
       @include screen(smlim) {
@@ -676,6 +677,7 @@
     }
 
     &-value {
+      display: inline-block;
       font-size: 18px;
       font-weight: 500;
     }
