@@ -1,5 +1,4 @@
 .contacts {
-
   @include screen('smlim') {
     padding: 5px 15px;
     margin-bottom: 25px;
@@ -15,7 +14,7 @@
     @include screen('smlim') {
       margin-bottom: 5px;
     }
-  
+
     @include screen('lg') {
       margin-bottom: 25px;
     }
@@ -54,6 +53,7 @@
         width: 25.5%;
         flex: 0 0 25.5%;
       }
+
       &:nth-child(2) {
         width: 22.5%;
         flex: 0 0 22.2%;
@@ -80,9 +80,14 @@
       margin: 0 10px 30px;
       border-radius: 20px;
     }
-  
+
     @include screen('lg') {
       margin-bottom: 60px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
     }
   }
 
@@ -93,7 +98,7 @@
     border-radius: 14px;
     color: #1fc119;
     font: 500 18px/24px Closer;
-    transition: color .5s,background .5s;
+    transition: color .5s, background .5s;
 
     &:hover {
       background: #36EB61;
@@ -103,6 +108,7 @@
     @include screen('smlim') {
       margin-top: 15px;
     }
+
     @include screen('lg') {
       margin-top: 20px;
     }

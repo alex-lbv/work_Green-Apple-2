@@ -121,7 +121,8 @@ gulp.task("serve", function () {
       baseDir: "build"
     },
     online: true,
-    tunnel: true
+    tunnel: true,
+    notify: false
   });
   gulp
     .watch("src/**/*.html", gulp.series("html"))
